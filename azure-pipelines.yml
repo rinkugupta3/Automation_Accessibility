@@ -43,6 +43,10 @@ stages:
             displayName: 'Install Python Dependencies'
 
           - script: |
+              pip install axe-selenium-python
+            displayName: 'Install axe-selenium-python'
+
+          - script: |
               npm install -g lighthouse
             displayName: 'Install Lighthouse'
 
