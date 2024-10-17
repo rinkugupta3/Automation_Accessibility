@@ -7,7 +7,6 @@
 # pytest -vv tests_axecore_lighthouse/test_axecore_lighthouse.py
 import logging
 import os
-import platform
 import subprocess
 import time
 from selenium import webdriver
@@ -102,9 +101,7 @@ try:
     generate_html_report(results, html_report_path)
 
     # Path to Lighthouse executable
-    # lighthouse_path = r"C:\Users\dhira\AppData\Roaming\npm\lighthouse.cmd"
-    lighthouse_command = "lighthouse"
-    subprocess.run([lighthouse_command])
+    lighthouse_path = r"C:\Users\dhira\AppData\Roaming\npm\lighthouse.cmd"
 
     # Run Lighthouse audit
     logger.info("Running Lighthouse audit...")
@@ -115,15 +112,15 @@ try:
     generate_html_report(results, html_report_path)
 
     lighthouse_command = [
-        'lighthouse',
+        lighthouse_path,
         # "https://rinkugupta3.github.io/HTML_CSS_Portfolio/",
         # "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
-        'https://www.google.com/',
-        '--output=html',
-        '--output-path=tests_axecore_lighthouse/lighthouse_report.html',
-        '--quiet'
+        "https://www.google.com/",
+        "--output=html",
+        f"--output-path={output_path}",  # Set the output path for the Lighthouse report
+        "--quite"
     ]
-    subprocess.run(lighthouse_command, check=True)
+    subprocess.run(lighthouse_command)
 
     logger.info("Lighthouse audit complete. Results saved to lighthouse_report.html.")
 

@@ -13,7 +13,7 @@ INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthous
 INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:86 Violation: Ensure role attribute has an appropriate value for the element
 INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:87 Impact: minor
 INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:88 Learn more: https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=axeAPI
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:91 Element: <textarea class="gLFyf" aria-controls="Alh6id" aria-owns="Alh6id" autofocus="" title="Search" value="" jsaction="paste:puy29d;" aria-label="Search" aria-autocomplete="both" aria-expanded="false" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" id="APjFqb" maxlength="2048" name="q" role="combobox" rows="1" spellcheck="false" data-ved="0ahUKEwjz-_vkrpaJAxXy78kDHU5-KhUQ39UDCAY">
+INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:91 Element: <textarea class="gLFyf" aria-controls="Alh6id" aria-owns="Alh6id" autofocus="" title="Search" value="" jsaction="paste:puy29d;" aria-label="Search" aria-autocomplete="both" aria-expanded="false" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" id="APjFqb" maxlength="2048" name="q" role="combobox" rows="1" spellcheck="false" data-ved="0ahUKEwiH-suFz5aJAxVJ_7sIHf54F2AQ39UDCAY">
 INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:92 Failure Summary: Fix any of the following:
   ARIA role combobox is not allowed for given element
 INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:86 Violation: Ensure the document has a main landmark
@@ -31,7 +31,7 @@ INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthous
 INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:86 Violation: Ensure all page content is contained by landmarks
 INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:87 Impact: moderate
 INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:88 Learn more: https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:91 Element: <img class="lnXdpd" alt="Google" height="92" src="/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" srcset="/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x" width="272" data-csiid="cIIRZ_ODNvLfp84PzvypqQE_1" data-atf="1">
+INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:91 Element: <img class="lnXdpd" alt="Google" height="92" src="/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" srcset="/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x" width="272" data-csiid="Q6QRZ8fMDsn-7_UP_vHdgAY_2" data-atf="1">
 INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:92 Failure Summary: Fix any of the following:
   Some page content is not contained by landmarks
 INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:95 Generating accessibility JSON report
