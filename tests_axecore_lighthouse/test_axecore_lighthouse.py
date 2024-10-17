@@ -115,13 +115,13 @@ try:
     generate_html_report(results, html_report_path)
 
     lighthouse_command = [
-        "lighthouse",
+        'lighthouse',
         # "https://rinkugupta3.github.io/HTML_CSS_Portfolio/",
         # "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
-        "https://www.google.com/",
-        "--output=html",
-        f"--output-path={output_path}",  # Set the output path for the Lighthouse report
-        "--quite"
+        'https://www.google.com/',
+        '--output=html',
+        '--output-path=tests_axecore_lighthouse/lighthouse_report.html',
+        '--quiet'
     ]
     subprocess.run(lighthouse_command, check=True)
 
