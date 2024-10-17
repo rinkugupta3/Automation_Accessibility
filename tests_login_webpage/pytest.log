@@ -1,0 +1,50 @@
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:21 Setting up Chrome WebDriver
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Driver [C:\Users\dhira\.wdm\drivers\chromedriver\win64\129.0.6668.100\chromedriver-win32/chromedriver.exe] found in cache
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:29 Navigating to OrangeHRM login page
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:34 Waiting for the login form to be present on the page
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:39 Injecting axe-core JavaScript into the page
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:47 Waiting for axe-core script to load
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:52 Initializing Axe-core for accessibility testing
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:56 Running WCAG 2.1 accessibility audit
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:65 3 accessibility violations found:
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:67 Violation: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:68 Impact: serious
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:69 Learn more: https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:72 Element: <a href="#Experience">Experience</a>
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:73 Failure Summary: Fix any of the following:
+  Element has insufficient color contrast of 1.09 (foreground color: #ffffff, background color: #f4f4f4, font size: 14.4pt (19.2px), font weight: normal). Expected contrast ratio of 4.5:1
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:67 Violation: Ensure the document has a main landmark
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:68 Impact: moderate
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:69 Learn more: https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:72 Element: <html lang="en">
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:73 Failure Summary: Fix all of the following:
+  Document does not have a main landmark
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:67 Violation: Ensure links are distinguished from surrounding text in a way that does not rely on color
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:68 Impact: serious
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:69 Learn more: https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:72 Element: <a href="https://github.com/rinkugupta3/Playwright_Automation_Dockerfile" target="_blank" aria-label="View Project 1 on GitHub">Link to project</a>
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:73 Failure Summary: Fix any of the following:
+  The link has insufficient color contrast of 2.44:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0066cc, surrounding text: #092a68)
+  The link has no styling (such as underline) to distinguish it from the surrounding text
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:72 Element: <a href="https://github.com/rinkugupta3/Playwright_Automation_DesignSetup" target="_blank" aria-label="View Project 2 on GitHub">Link to project</a>
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:73 Failure Summary: Fix any of the following:
+  The link has insufficient color contrast of 2.44:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0066cc, surrounding text: #092a68)
+  The link has no styling (such as underline) to distinguish it from the surrounding text
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:72 Element: <a href="https://public.tableau.com/app/profile/dhiraj.gupta2694/viz/08_TeslaData_GoogleDriveDoc/Dashboard" target="_blank" aria-label="View Project 3 on Tableau">Link to project</a>
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:73 Failure Summary: Fix any of the following:
+  The link has insufficient color contrast of 2.44:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0066cc, surrounding text: #092a68)
+  The link has no styling (such as underline) to distinguish it from the surrounding text
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:72 Element: <a href="https://dhirajgupta.atlassian.net/jira/software/c/projects/SSP/boards/3/backlog" target="_blank" aria-label="View Project 4 on Jira">Link to project</a>
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:73 Failure Summary: Fix any of the following:
+  The link has insufficient color contrast of 2.44:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0066cc, surrounding text: #092a68)
+  The link has no styling (such as underline) to distinguish it from the surrounding text
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:72 Element: <a href="https://github.com/rinkugupta3/HTML_CSS_Portfolio" target="_blank" aria-label="View Project 5 on GitHub">Link to project</a>
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:73 Failure Summary: Fix any of the following:
+  The link has insufficient color contrast of 2.44:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0066cc, surrounding text: #092a68)
+  The link has no styling (such as underline) to distinguish it from the surrounding text
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:76 Generating accessibility JSON report
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:80 Generating accessibility HTML report
+INFO     tests_login_webpage.test_login_webpage:test_login_webpage.py:87 Closing the browser

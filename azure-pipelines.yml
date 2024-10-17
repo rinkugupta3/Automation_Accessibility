@@ -1,0 +1,143 @@
+trigger:
+  branches:
+    include:
+      - main
+      - stage
+      - dev
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  PipCache: $(Pipeline.Workspace)/.pip_cache
+  HEADLESS: 'true'
+
+stages:
+  # Stage for running headless tests in the 'tests_axecore_lighthouse' folder
+  - stage: AxecoreLighthouseTests
+    displayName: 'Run Headless Axecore Lighthouse Tests'
+    jobs:
+      - job: RunAxecoreLighthouse
+        steps:
+          - task: UsePythonVersion@0
+            inputs:
+              versionSpec: '3.11'
+              addToPath: true
+
+          - script: |
+              mkdir "$(PipCache)" || echo "Cache directory already exists"
+            displayName: 'Create Pip Cache Directory'
+
+          - task: Cache@2
+            inputs:
+              key: 'python | "$(Agent.OS)"  | requirements.txt'
+              restoreKeys: |
+                python | "$(Agent.OS)"
+              path: $(PipCache)
+            continueOnError: true
+
+          - script: |
+              python -m pip install --upgrade pip
+              pip install -r requirements.txt
+              pip install pytest-html
+            displayName: 'Install Python Dependencies'
+
+          - script: |
+              export HEADLESS=true
+              pytest tests_axecore_lighthouse/ --html=report_axecore_lighthouse.html --maxfail=3 --disable-warnings -v
+            displayName: 'Run Headless Axecore Lighthouse Tests'
+
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: 'report_axecore_lighthouse.html'
+              ArtifactName: 'AxecoreLighthouseTestReport'
+
+          - task: PublishPipelineArtifact@1
+            inputs:
+              targetPath: 'screenshots'
+
+  # Stage for running headless tests in the 'tests_login_home_webpage' folder
+  - stage: LoginHomeWebpageTests
+    displayName: 'Run Headless Login Home Webpage Tests'
+    jobs:
+      - job: RunLoginHomeWebpage
+        steps:
+          - task: UsePythonVersion@0
+            inputs:
+              versionSpec: '3.11'
+              addToPath: true
+
+          - script: |
+              mkdir "$(PipCache)" || echo "Cache directory already exists"
+            displayName: 'Create Pip Cache Directory'
+
+          - task: Cache@2
+            inputs:
+              key: 'python | "$(Agent.OS)"  | requirements.txt'
+              restoreKeys: |
+                python | "$(Agent.OS)"
+              path: $(PipCache)
+            continueOnError: true
+
+          - script: |
+              python -m pip install --upgrade pip
+              pip install -r requirements.txt
+              pip install pytest-html
+            displayName: 'Install Python Dependencies'
+
+          - script: |
+              export HEADLESS=true
+              pytest tests_login_home_webpage/ --html=report_login_home_webpage.html --maxfail=3 --disable-warnings -v
+            displayName: 'Run Headless Login Home Webpage Tests'
+
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: 'report_login_home_webpage.html'
+              ArtifactName: 'LoginHomeWebpageTestReport'
+
+          - task: PublishPipelineArtifact@1
+            inputs:
+              targetPath: 'screenshots'
+
+  # Stage for running headless tests in the 'tests_login_webpage' folder
+  - stage: LoginWebpageTests
+    displayName: 'Run Headless Login Webpage Tests'
+    jobs:
+      - job: RunLoginWebpage
+        steps:
+          - task: UsePythonVersion@0
+            inputs:
+              versionSpec: '3.11'
+              addToPath: true
+
+          - script: |
+              mkdir "$(PipCache)" || echo "Cache directory already exists"
+            displayName: 'Create Pip Cache Directory'
+
+          - task: Cache@2
+            inputs:
+              key: 'python | "$(Agent.OS)"  | requirements.txt'
+              restoreKeys: |
+                python | "$(Agent.OS)"
+              path: $(PipCache)
+            continueOnError: true
+
+          - script: |
+              python -m pip install --upgrade pip
+              pip install -r requirements.txt
+              pip install pytest-html
+            displayName: 'Install Python Dependencies'
+
+          - script: |
+              export HEADLESS=true
+              pytest tests_login_webpage/ --html=report_login_webpage.html --maxfail=3 --disable-warnings -v
+            displayName: 'Run Headless Login Webpage Tests'
+
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: 'report_login_webpage.html'
+              ArtifactName: 'LoginWebpageTestReport'
+
+          - task: PublishPipelineArtifact@1
+            inputs:
+              targetPath: 'screenshots'
