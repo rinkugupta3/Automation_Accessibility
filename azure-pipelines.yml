@@ -52,6 +52,7 @@ stages:
 
           - script: |
               export HEADLESS=true
+              lighthouse --version  # Check Lighthouse installation
               pytest tests_axecore_lighthouse/ --html=report_axecore_lighthouse.html --maxfail=3 --disable-warnings -v
             displayName: 'Run Headless Axecore Lighthouse Tests'
 

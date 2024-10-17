@@ -103,12 +103,8 @@ try:
 
     # Path to Lighthouse executable
     # lighthouse_path = r"C:\Users\dhira\AppData\Roaming\npm\lighthouse.cmd"
-    if platform.system() == "Windows":
-        lighthouse_command = r"C:\Users\dhira\AppData\Roaming\npm\lighthouse.cmd"
-    else:
-        lighthouse_command = r"C:\Users\dhira\AppData\Roaming\npm\lighthouse"
-
-    subprocess.run(lighthouse_command)
+    lighthouse_command = "lighthouse"
+    subprocess.run([lighthouse_command])
 
     # Run Lighthouse audit
     logger.info("Running Lighthouse audit...")
@@ -119,7 +115,7 @@ try:
     generate_html_report(results, html_report_path)
 
     lighthouse_command = [
-        lighthouse_path,
+        "lighthouse",
         # "https://rinkugupta3.github.io/HTML_CSS_Portfolio/",
         # "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
         "https://www.google.com/",
