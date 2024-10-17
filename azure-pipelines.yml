@@ -58,7 +58,7 @@ stages:
 
           - task: PublishBuildArtifacts@1
             inputs:
-              PathtoPublish: 'report_axecore_lighthouse.html'
+              PathtoPublish: 'tests_axecore_lighthouse/report_axecore_lighthouse.html'
               ArtifactName: 'AxecoreLighthouseTestReport'
 
           - task: PublishPipelineArtifact@1
