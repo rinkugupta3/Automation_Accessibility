@@ -7,6 +7,7 @@
 # pytest -vv tests_axecore_lighthouse/test_axecore_lighthouse.py
 import logging
 import os
+import platform
 import subprocess
 import time
 from selenium import webdriver
@@ -101,7 +102,13 @@ try:
     generate_html_report(results, html_report_path)
 
     # Path to Lighthouse executable
-    lighthouse_path = r"C:\Users\dhira\AppData\Roaming\npm\lighthouse.cmd"
+    # lighthouse_path = r"C:\Users\dhira\AppData\Roaming\npm\lighthouse.cmd"
+    if platform.system() == "Windows":
+        lighthouse_command = r"C:\Users\dhira\AppData\Roaming\npm\lighthouse.cmd"
+    else:
+        lighthouse_command = r"C:\Users\dhira\AppData\Roaming\npm\lighthouse"
+
+    subprocess.run(lighthouse_command)
 
     # Run Lighthouse audit
     logger.info("Running Lighthouse audit...")
