@@ -123,7 +123,7 @@ try:
         f"--output-path={output_path}",  # Set the output path for the Lighthouse report
         "--quite"
     ]
-    subprocess.run(lighthouse_command)
+    subprocess.run(lighthouse_command, check=True)
 
     logger.info("Lighthouse audit complete. Results saved to lighthouse_report.html.")
 
