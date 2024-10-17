@@ -40,8 +40,11 @@ stages:
               python -m pip install --upgrade pip
               pip install -r requirements.txt
               pip install pytest-html
-              pip install -g lighthouse
-            displayName: 'Install Python Dependencies and Lighthouse'
+              displayName: 'Install Python Dependencies'
+
+          - script: |
+              npm install -g lighthouse
+              displayName: 'Install Lighthouse'
 
           - script: |
               export HEADLESS=true
