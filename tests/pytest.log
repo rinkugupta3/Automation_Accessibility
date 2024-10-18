@@ -1,41 +1,45 @@
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:33 Setting up Chrome WebDriver
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:36 Setting up Chrome WebDriver
 INFO     WDM:logger.py:11 ====== WebDriver manager ======
 INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
 INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
 INFO     WDM:logger.py:11 Driver [C:\Users\dhira\.wdm\drivers\chromedriver\win64\129.0.6668.100\chromedriver-win32/chromedriver.exe] found in cache
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:41 Navigating to login page
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:47 Waiting for the login form to be present on the page
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:65 Injecting axe-core JavaScript into the page
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:73 Waiting for axe-core script to load
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:78 Initializing Axe-core for accessibility testing
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:82 Running WCAG 2.1 accessibility audit
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:91 4 accessibility violations found:
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:93 Violation: Ensure role attribute has an appropriate value for the element
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:94 Impact: minor
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:95 Learn more: https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=axeAPI
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:98 Element: <textarea class="gLFyf" aria-controls="Alh6id" aria-owns="Alh6id" autofocus="" title="Search" value="" jsaction="paste:puy29d;" aria-label="Search" aria-autocomplete="both" aria-expanded="false" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" id="APjFqb" maxlength="2048" name="q" role="combobox" rows="1" spellcheck="false" data-ved="0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ39UDCAY">
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:99 Failure Summary: Fix any of the following:
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:44 Navigating to login page
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:50 Waiting for the login form to be present on the page
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:68 Injecting axe-core JavaScript into the page
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:76 Waiting for axe-core script to load
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:81 Initializing Axe-core for accessibility testing
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:85 Running WCAG 2.1 accessibility audit
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:94 4 accessibility violations found:
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:96 Violation: Ensure role attribute has an appropriate value for the element
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:97 Impact: minor
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:98 Learn more: https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=axeAPI
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:101 Element: <textarea class="gLFyf" aria-controls="Alh6id" aria-owns="Alh6id" autofocus="" title="Search" value="" jsaction="paste:puy29d;" aria-label="Search" aria-autocomplete="both" aria-expanded="false" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" id="APjFqb" maxlength="2048" name="q" role="combobox" rows="1" spellcheck="false" data-ved="0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ39UDCAY">
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:102 Failure Summary: Fix any of the following:
   ARIA role combobox is not allowed for given element
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:93 Violation: Ensure the document has a main landmark
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:94 Impact: moderate
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:95 Learn more: https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:98 Element: <html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:99 Failure Summary: Fix all of the following:
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:96 Violation: Ensure the document has a main landmark
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:97 Impact: moderate
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:98 Learn more: https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:101 Element: <html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:102 Failure Summary: Fix all of the following:
   Document does not have a main landmark
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:93 Violation: Ensure that the page, or at least one of its frames contains a level-one heading
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:94 Impact: moderate
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:95 Learn more: https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=axeAPI
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:98 Element: <html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:99 Failure Summary: Fix all of the following:
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:96 Violation: Ensure that the page, or at least one of its frames contains a level-one heading
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:97 Impact: moderate
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:98 Learn more: https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=axeAPI
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:101 Element: <html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:102 Failure Summary: Fix all of the following:
   Page must have a level-one heading
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:93 Violation: Ensure all page content is contained by landmarks
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:94 Impact: moderate
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:95 Learn more: https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:98 Element: <img class="lnXdpd" alt="Google" height="92" src="/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" srcset="/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x" width="272" data-csiid="3bgRZ5HjM-SL9u8P6ZnT2AI_2" data-atf="1">
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:99 Failure Summary: Fix any of the following:
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:96 Violation: Ensure all page content is contained by landmarks
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:97 Impact: moderate
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:98 Learn more: https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:101 Element: <img class="lnXdpd" alt="Google" height="92" src="/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" srcset="/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x" width="272" data-csiid="UGESZ6WyFqOg5NoPv_-byAQ_1" data-atf="1">
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:102 Failure Summary: Fix any of the following:
   Some page content is not contained by landmarks
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:102 Generating accessibility JSON report
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:106 Generating accessibility HTML report
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:114 Running Lighthouse audit...
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:132 Lighthouse audit complete. Results saved to lighthouse_report.html.
-INFO     tests_axecore_lighthouse.test_axecore_lighthouse:test_axecore_lighthouse.py:136 Closing the browser
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:101 Element: <span> New York vs Minnesota. </span>
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:102 Failure Summary: Fix any of the following:
+  Some page content is not contained by landmarks
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:105 Generating accessibility JSON report
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:109 Generating accessibility HTML report
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:114 Determining the platform for Lighthouse executable
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:126 Running Lighthouse audit...
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:144 Lighthouse audit complete. Results saved to lighthouse_report.html.
+INFO     tests.test_axecore_lighthouse:test_axecore_lighthouse.py:148 Closing the browser

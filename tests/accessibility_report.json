@@ -307,6 +307,19 @@
             ]
         },
         {
+            "description": "Ensure <iframe> and <frame> elements contain the axe-core script",
+            "help": "Frames should be tested with axe-core",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-tested?application=axeAPI",
+            "id": "frame-tested",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.structure",
+                "best-practice",
+                "review-item"
+            ]
+        },
+        {
             "description": "Ensure <iframe> and <frame> elements contain a unique title attribute",
             "help": "Frames must have a unique title attribute",
             "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title-unique?application=axeAPI",
@@ -317,6 +330,25 @@
                 "cat.text-alternatives",
                 "wcag2a",
                 "wcag412",
+                "TTv5",
+                "TT12.d",
+                "EN-301-549",
+                "EN-9.4.1.2"
+            ]
+        },
+        {
+            "description": "Ensure <iframe> and <frame> elements have an accessible name",
+            "help": "Frames must have an accessible name",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=axeAPI",
+            "id": "frame-title",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag412",
+                "section508",
+                "section508.22.i",
                 "TTv5",
                 "TT12.d",
                 "EN-301-549",
@@ -819,17 +851,17 @@
                         {
                             "data": {
                                 "messageKey": "controlsWithinPopup",
-                                "needsReview": "aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\""
+                                "needsReview": "aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\""
                             },
                             "id": "aria-valid-attr-value",
                             "impact": "critical",
-                            "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\"",
+                            "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\"",
                             "relatedNodes": []
                         }
                     ],
                     "any": [],
-                    "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\"",
-                    "html": "<div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div>",
+                    "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\"",
+                    "html": "<div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div>",
                     "impact": "critical",
                     "none": [],
                     "target": [
@@ -896,39 +928,6 @@
                 "TT9.a",
                 "EN-301-549",
                 "EN-9.2.4.1"
-            ]
-        },
-        {
-            "description": "Ensure <iframe> and <frame> elements contain the axe-core script",
-            "help": "Frames should be tested with axe-core",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-tested?application=axeAPI",
-            "id": "frame-tested",
-            "impact": "critical",
-            "nodes": [
-                {
-                    "all": [
-                        {
-                            "data": null,
-                            "id": "frame-tested",
-                            "impact": "critical",
-                            "message": "The iframe still has to be tested with axe-core",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "any": [],
-                    "failureSummary": "Fix all of the following:\n  The iframe still has to be tested with axe-core",
-                    "html": "<iframe role=\"presentation\" frameborder=\"0\" scrolling=\"no\" name=\"callout\" src=\"https://ogs.google.com/widget/callout?prid=19037050&amp;pgid=19037049&amp;puid=9ceb59a7585b55bd&amp;eom=1&amp;cce=1&amp;dc=1&amp;origin=https%3A%2F%2Fwww.google.com&amp;cn=callout&amp;pid=1&amp;spid=538&amp;hl=en\" style=\"height: 100%; width: 100%; color-scheme: light;\">",
-                    "impact": "critical",
-                    "none": [],
-                    "target": [
-                        "iframe"
-                    ]
-                }
-            ],
-            "tags": [
-                "cat.structure",
-                "best-practice",
-                "review-item"
             ]
         }
     ],
@@ -1055,33 +1054,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<div aria-hidden=\"false\" style=\"overflow: hidden; position: absolute; top: 0px; width: 370px; z-index: 991; height: 186px; margin-top: 70px; right: 0px; margin-right: 25px;\">",
-                    "impact": null,
-                    "none": [
-                        {
-                            "data": null,
-                            "id": "aria-unsupported-attr",
-                            "impact": "critical",
-                            "message": "ARIA attribute is supported",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "target": [
-                        "div[aria-hidden=\"false\"]"
-                    ]
-                },
-                {
-                    "all": [
-                        {
-                            "data": null,
-                            "id": "aria-allowed-attr",
-                            "impact": "critical",
-                            "message": "ARIA attributes are used correctly for the defined role",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "any": [],
-                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ39UDCAY\">",
+                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ39UDCAY\">",
                     "impact": null,
                     "none": [
                         {
@@ -1107,7 +1080,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQvs8DCAg\">",
+                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQvs8DCAg\">",
                     "impact": null,
                     "none": [
                         {
@@ -1133,7 +1106,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQhqEICAk\">",
+                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQhqEICAk\">",
                     "impact": null,
                     "none": [
                         {
@@ -1159,7 +1132,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4dUDCBM\">",
+                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4dUDCBM\">",
                     "impact": null,
                     "none": [
                         {
@@ -1185,7 +1158,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQnRsIFA\">",
+                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQnRsIFA\">",
                     "impact": null,
                     "none": [
                         {
@@ -1211,7 +1184,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div></div>",
+                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div></div>",
                     "impact": null,
                     "none": [
                         {
@@ -1237,7 +1210,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div>",
+                    "html": "<div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div>",
                     "impact": null,
                     "none": [
                         {
@@ -1315,24 +1288,6 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<iframe role=\"presentation\" frameborder=\"0\" scrolling=\"no\" name=\"callout\" src=\"https://ogs.google.com/widget/callout?prid=19037050&amp;pgid=19037049&amp;puid=9ceb59a7585b55bd&amp;eom=1&amp;cce=1&amp;dc=1&amp;origin=https%3A%2F%2Fwww.google.com&amp;cn=callout&amp;pid=1&amp;spid=538&amp;hl=en\" style=\"height: 100%; width: 100%; color-scheme: light;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "iframe"
-                    ]
-                },
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": null,
-                            "id": "aria-allowed-role",
-                            "impact": "minor",
-                            "message": "ARIA role is allowed for given element",
-                            "relatedNodes": []
-                        }
-                    ],
                     "html": "<form action=\"/search\" autocomplete=\"off\" method=\"GET\" role=\"search\">",
                     "impact": null,
                     "none": [],
@@ -1351,7 +1306,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div class=\"vOY7J\" tabindex=\"0\" jsname=\"pkjasb\" aria-label=\" Clear\" role=\"button\" jsaction=\"AVsnlb;rcuQ6b:npT2md\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ05YFCAc\">",
+                    "html": "<div class=\"vOY7J\" tabindex=\"0\" jsname=\"pkjasb\" aria-label=\" Clear\" role=\"button\" jsaction=\"AVsnlb;rcuQ6b:npT2md\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ05YFCAc\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -1369,7 +1324,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQvs8DCAg\">",
+                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQvs8DCAg\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -1387,7 +1342,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQhqEICAk\">",
+                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQhqEICAk\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -1405,7 +1360,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"P10Owf\" class=\"YB4h9 ky4hfd\" aria-label=\"Choose what you\u2019re giving feedback on\" jsdata=\"vST7rb;_;BG2iWo\" role=\"dialog\" jsaction=\"kPzEO:MlP2je;qjLxRc:MlP2je;w8f1fc:hRwSgb;kq2wxf:s5CUif\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQlokGCAw\">",
+                    "html": "<div jscontroller=\"P10Owf\" class=\"YB4h9 ky4hfd\" aria-label=\"Choose what you\u2019re giving feedback on\" jsdata=\"vST7rb;_;BDKGII\" role=\"dialog\" jsaction=\"kPzEO:MlP2je;qjLxRc:MlP2je;w8f1fc:hRwSgb;kq2wxf:s5CUif\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQlokGCAw\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -1423,7 +1378,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<span class=\"Job8vb z1asCe wuXmqc\" aria-label=\"Close Choose what you\u2019re giving feedback on\" role=\"button\" tabindex=\"0\" jsaction=\"kEOk4d\" style=\"height:20px;line-height:20px;width:20px\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQmIkGCA0\">",
+                    "html": "<span class=\"Job8vb z1asCe wuXmqc\" aria-label=\"Close Choose what you\u2019re giving feedback on\" role=\"button\" tabindex=\"0\" jsaction=\"kEOk4d\" style=\"height:20px;line-height:20px;width:20px\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQmIkGCA0\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -1891,7 +1846,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4dUDCA8\">",
+                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4dUDCA8\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -1909,7 +1864,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div class=\"WzNHm mWcf0e\" jscontroller=\"gSZvdb\" data-dccl=\"false\" role=\"button\" tabindex=\"0\" jsdata=\"vST7rb;_;BG2iWo\" jsaction=\"i5KCU;kVBCVd:yM1YJe\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ6scECBE\"><div class=\"VfL2Y LRZwuc\">Report inappropriate predictions</div></div>",
+                    "html": "<div class=\"WzNHm mWcf0e\" jscontroller=\"gSZvdb\" data-dccl=\"false\" role=\"button\" tabindex=\"0\" jsdata=\"vST7rb;_;BDKGII\" jsaction=\"i5KCU;kVBCVd:yM1YJe\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ6scECBE\"><div class=\"VfL2Y LRZwuc\">Report inappropriate predictions</div></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -1927,7 +1882,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4dUDCBM\">",
+                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4dUDCBM\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -1945,7 +1900,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQnRsIFA\">",
+                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQnRsIFA\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2143,6 +2098,24 @@
                             "relatedNodes": []
                         }
                     ],
+                    "html": "<a jscontroller=\"Jlf2lc\" class=\"m5Qfy\" jsdata=\"fXexJ;_;BDKeio\" rel=\"nofollow\" role=\"button\" tabindex=\"0\" jsaction=\"UEmoBd\" data-ved=\"2ahUKEwicjZqrg5iJAxW3L1kFHTIsFG4Q8IcBegQIAhAB\">WNBA Finals are on YouTube TV</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".m5Qfy"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-allowed-role",
+                            "impact": "minor",
+                            "message": "ARIA role is allowed for given element",
+                            "relatedNodes": []
+                        }
+                    ],
                     "html": "<div class=\"o3j99 c93Gbe\" role=\"contentinfo\">",
                     "impact": null,
                     "none": [],
@@ -2161,7 +2134,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div></div>",
+                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2197,11 +2170,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe\" role=\"none\" data-short-label=\"\" jsdata=\"zPXzie;_;BG2iWw\">",
+                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe\" role=\"none\" data-short-label=\"\" jsdata=\"zPXzie;_;BDKGIQ\">",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "g-menu-item[jsdata=\"zPXzie;_;BG2iWw\"]:nth-child(1)"
+                        "g-menu-item[jsdata=\"zPXzie;_;BDKGIQ\"]:nth-child(1)"
                     ]
                 },
                 {
@@ -2215,11 +2188,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jsname=\"ibnC6b\" class=\"YpcDnf OSrXXb HG1dvd\" role=\"none\"><a href=\"https://www.google.com/preferences?hl=en&amp;fg=1\" role=\"menuitem\" tabindex=\"-1\" data-jsarwt=\"1\" data-usg=\"AOvVaw09CRNgN6qUho4dSarueJoy\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQs4gOCB4\">Search settings</a></div>",
+                    "html": "<div jsname=\"ibnC6b\" class=\"YpcDnf OSrXXb HG1dvd\" role=\"none\"><a href=\"https://www.google.com/preferences?hl=en&amp;fg=1\" role=\"menuitem\" tabindex=\"-1\" data-jsarwt=\"1\" data-usg=\"AOvVaw09CRNgN6qUho4dSarueJoy\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQs4gOCB4\">Search settings</a></div>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "g-menu-item[jsdata=\"zPXzie;_;BG2iWw\"]:nth-child(1) > .YpcDnf.OSrXXb.HG1dvd"
+                        "g-menu-item[jsdata=\"zPXzie;_;BDKGIQ\"]:nth-child(1) > .YpcDnf.OSrXXb.HG1dvd"
                     ]
                 },
                 {
@@ -2233,7 +2206,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a href=\"https://www.google.com/preferences?hl=en&amp;fg=1\" role=\"menuitem\" tabindex=\"-1\" data-jsarwt=\"1\" data-usg=\"AOvVaw09CRNgN6qUho4dSarueJoy\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQs4gOCB4\">Search settings</a>",
+                    "html": "<a href=\"https://www.google.com/preferences?hl=en&amp;fg=1\" role=\"menuitem\" tabindex=\"-1\" data-jsarwt=\"1\" data-usg=\"AOvVaw09CRNgN6qUho4dSarueJoy\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQs4gOCB4\">Search settings</a>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2251,11 +2224,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe\" role=\"none\" data-short-label=\"\" jsdata=\"zPXzie;_;BG2iWw\">",
+                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe\" role=\"none\" data-short-label=\"\" jsdata=\"zPXzie;_;BDKGIQ\">",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "g-menu-item[jsdata=\"zPXzie;_;BG2iWw\"]:nth-child(2)"
+                        "g-menu-item[jsdata=\"zPXzie;_;BDKGIQ\"]:nth-child(2)"
                     ]
                 },
                 {
@@ -2269,11 +2242,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jsname=\"ibnC6b\" class=\"YpcDnf OSrXXb HG1dvd\" role=\"none\"><a href=\"/advanced_search?hl=en&amp;fg=1\" role=\"menuitem\" tabindex=\"-1\" data-jsarwt=\"1\" data-usg=\"AOvVaw3aH7g8Lwaqe6UvHbsKIoUM\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ3ogOCB8\">Advanced search</a></div>",
+                    "html": "<div jsname=\"ibnC6b\" class=\"YpcDnf OSrXXb HG1dvd\" role=\"none\"><a href=\"/advanced_search?hl=en&amp;fg=1\" role=\"menuitem\" tabindex=\"-1\" data-jsarwt=\"1\" data-usg=\"AOvVaw3aH7g8Lwaqe6UvHbsKIoUM\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ3ogOCB8\">Advanced search</a></div>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "g-menu-item[jsdata=\"zPXzie;_;BG2iWw\"]:nth-child(2) > .YpcDnf.OSrXXb.HG1dvd"
+                        "g-menu-item[jsdata=\"zPXzie;_;BDKGIQ\"]:nth-child(2) > .YpcDnf.OSrXXb.HG1dvd"
                     ]
                 },
                 {
@@ -2287,7 +2260,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a href=\"/advanced_search?hl=en&amp;fg=1\" role=\"menuitem\" tabindex=\"-1\" data-jsarwt=\"1\" data-usg=\"AOvVaw3aH7g8Lwaqe6UvHbsKIoUM\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ3ogOCB8\">Advanced search</a>",
+                    "html": "<a href=\"/advanced_search?hl=en&amp;fg=1\" role=\"menuitem\" tabindex=\"-1\" data-jsarwt=\"1\" data-usg=\"AOvVaw3aH7g8Lwaqe6UvHbsKIoUM\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ3ogOCB8\">Advanced search</a>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2305,11 +2278,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe\" role=\"none\" data-short-label=\"\" jsdata=\"zPXzie;_;BG2iWw\">",
+                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe\" role=\"none\" data-short-label=\"\" jsdata=\"zPXzie;_;BDKGIQ\">",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "g-menu-item[jsdata=\"zPXzie;_;BG2iWw\"]:nth-child(3)"
+                        "g-menu-item[jsdata=\"zPXzie;_;BDKGIQ\"]:nth-child(3)"
                     ]
                 },
                 {
@@ -2327,7 +2300,7 @@
                     "impact": null,
                     "none": [],
                     "target": [
-                        "g-menu-item[jsdata=\"zPXzie;_;BG2iWw\"]:nth-child(3) > .YpcDnf.OSrXXb.HG1dvd"
+                        "g-menu-item[jsdata=\"zPXzie;_;BDKGIQ\"]:nth-child(3) > .YpcDnf.OSrXXb.HG1dvd"
                     ]
                 },
                 {
@@ -2341,7 +2314,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a href=\"/history/privacyadvisor/search/unauth?utm_source=googlemenu&amp;fg=1&amp;cctld=com\" role=\"menuitem\" tabindex=\"-1\" data-jsarwt=\"1\" data-usg=\"AOvVaw2r0Zi2y90SFsMrwdB8fUcz\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQgoYOCCA\">Your data in Search</a>",
+                    "html": "<a href=\"/history/privacyadvisor/search/unauth?utm_source=googlemenu&amp;fg=1&amp;cctld=com\" role=\"menuitem\" tabindex=\"-1\" data-jsarwt=\"1\" data-usg=\"AOvVaw2r0Zi2y90SFsMrwdB8fUcz\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQgoYOCCA\">Your data in Search</a>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2359,11 +2332,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe\" role=\"none\" data-short-label=\"\" jsdata=\"zPXzie;_;BG2iWw\">",
+                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe\" role=\"none\" data-short-label=\"\" jsdata=\"zPXzie;_;BDKGIQ\">",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "g-menu-item[jsdata=\"zPXzie;_;BG2iWw\"]:nth-child(4)"
+                        "g-menu-item[jsdata=\"zPXzie;_;BDKGIQ\"]:nth-child(4)"
                     ]
                 },
                 {
@@ -2377,11 +2350,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jsname=\"ibnC6b\" class=\"YpcDnf OSrXXb HG1dvd\" role=\"none\"><a href=\"/history/optout?hl=en&amp;fg=1\" role=\"menuitem\" tabindex=\"-1\" data-jsarwt=\"1\" data-usg=\"AOvVaw1jhDdjNbo1iNn0FnUFFRwS\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4YgOCCE\">Search history</a></div>",
+                    "html": "<div jsname=\"ibnC6b\" class=\"YpcDnf OSrXXb HG1dvd\" role=\"none\"><a href=\"/history/optout?hl=en&amp;fg=1\" role=\"menuitem\" tabindex=\"-1\" data-jsarwt=\"1\" data-usg=\"AOvVaw1jhDdjNbo1iNn0FnUFFRwS\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4YgOCCE\">Search history</a></div>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "g-menu-item[jsdata=\"zPXzie;_;BG2iWw\"]:nth-child(4) > .YpcDnf.OSrXXb.HG1dvd"
+                        "g-menu-item[jsdata=\"zPXzie;_;BDKGIQ\"]:nth-child(4) > .YpcDnf.OSrXXb.HG1dvd"
                     ]
                 },
                 {
@@ -2395,7 +2368,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a href=\"/history/optout?hl=en&amp;fg=1\" role=\"menuitem\" tabindex=\"-1\" data-jsarwt=\"1\" data-usg=\"AOvVaw1jhDdjNbo1iNn0FnUFFRwS\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4YgOCCE\">Search history</a>",
+                    "html": "<a href=\"/history/optout?hl=en&amp;fg=1\" role=\"menuitem\" tabindex=\"-1\" data-jsarwt=\"1\" data-usg=\"AOvVaw1jhDdjNbo1iNn0FnUFFRwS\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4YgOCCE\">Search history</a>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2413,11 +2386,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe\" role=\"none\" data-short-label=\"\" jsdata=\"zPXzie;_;BG2iWw\">",
+                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe\" role=\"none\" data-short-label=\"\" jsdata=\"zPXzie;_;BDKGIQ\">",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "g-menu-item[jsdata=\"zPXzie;_;BG2iWw\"]:nth-child(5)"
+                        "g-menu-item[jsdata=\"zPXzie;_;BDKGIQ\"]:nth-child(5)"
                     ]
                 },
                 {
@@ -2435,7 +2408,7 @@
                     "impact": null,
                     "none": [],
                     "target": [
-                        "g-menu-item[jsdata=\"zPXzie;_;BG2iWw\"]:nth-child(5) > .YpcDnf.OSrXXb.HG1dvd"
+                        "g-menu-item[jsdata=\"zPXzie;_;BDKGIQ\"]:nth-child(5) > .YpcDnf.OSrXXb.HG1dvd"
                     ]
                 },
                 {
@@ -2449,7 +2422,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a href=\"https://support.google.com/websearch/?p=ws_results_help&amp;hl=en&amp;fg=1\" role=\"menuitem\" tabindex=\"-1\" data-jsarwt=\"1\" data-usg=\"AOvVaw3OMgCBLQR8XnB9gM70GF5s\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4IgOCCI\">Search help</a>",
+                    "html": "<a href=\"https://support.google.com/websearch/?p=ws_results_help&amp;hl=en&amp;fg=1\" role=\"menuitem\" tabindex=\"-1\" data-jsarwt=\"1\" data-usg=\"AOvVaw3OMgCBLQR8XnB9gM70GF5s\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4IgOCCI\">Search help</a>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2467,11 +2440,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe\" role=\"none\" data-short-label=\"\" jsdata=\"zPXzie;_;BG2iWw\">",
+                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe\" role=\"none\" data-short-label=\"\" jsdata=\"zPXzie;_;BDKGIQ\">",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "g-menu-item[jsdata=\"zPXzie;_;BG2iWw\"]:nth-child(6)"
+                        "g-menu-item[jsdata=\"zPXzie;_;BDKGIQ\"]:nth-child(6)"
                     ]
                 },
                 {
@@ -2485,11 +2458,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jsname=\"ibnC6b\" class=\"YpcDnf OSrXXb HG1dvd\" role=\"none\"><span data-bucket=\"websearch\" role=\"menuitem\" tabindex=\"-1\" jsaction=\"trigger.YcfJ\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4ogOCCM\">Send feedback</span></div>",
+                    "html": "<div jsname=\"ibnC6b\" class=\"YpcDnf OSrXXb HG1dvd\" role=\"none\"><span data-bucket=\"websearch\" role=\"menuitem\" tabindex=\"-1\" jsaction=\"trigger.YcfJ\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4ogOCCM\">Send feedback</span></div>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "g-menu-item[jsdata=\"zPXzie;_;BG2iWw\"]:nth-child(6) > .YpcDnf.OSrXXb.HG1dvd"
+                        "g-menu-item[jsdata=\"zPXzie;_;BDKGIQ\"]:nth-child(6) > .YpcDnf.OSrXXb.HG1dvd"
                     ]
                 },
                 {
@@ -2503,7 +2476,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<span data-bucket=\"websearch\" role=\"menuitem\" tabindex=\"-1\" jsaction=\"trigger.YcfJ\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4ogOCCM\">Send feedback</span>",
+                    "html": "<span data-bucket=\"websearch\" role=\"menuitem\" tabindex=\"-1\" jsaction=\"trigger.YcfJ\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4ogOCCM\">Send feedback</span>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2521,7 +2494,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe LGiluc\" aria-hidden=\"true\" role=\"separator\" data-short-label=\"\" jsdata=\"zPXzie;_;BG2iW0\"></g-menu-item>",
+                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe LGiluc\" aria-hidden=\"true\" role=\"separator\" data-short-label=\"\" jsdata=\"zPXzie;_;BDKGIU\"></g-menu-item>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2539,11 +2512,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe\" role=\"none\" data-short-label=\"\" jsdata=\"zPXzie;_;BG2iWw\">",
+                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe\" role=\"none\" data-short-label=\"\" jsdata=\"zPXzie;_;BDKGIQ\">",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "g-menu-item[jsdata=\"zPXzie;_;BG2iWw\"]:nth-child(8)"
+                        "g-menu-item[jsdata=\"zPXzie;_;BDKGIQ\"]:nth-child(8)"
                     ]
                 },
                 {
@@ -2561,7 +2534,7 @@
                     "impact": null,
                     "none": [],
                     "target": [
-                        "g-menu-item[jsdata=\"zPXzie;_;BG2iWw\"]:nth-child(8) > .YpcDnf.OSrXXb.HG1dvd"
+                        "g-menu-item[jsdata=\"zPXzie;_;BDKGIQ\"]:nth-child(8) > .YpcDnf.OSrXXb.HG1dvd"
                     ]
                 },
                 {
@@ -2575,7 +2548,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div class=\"y0fQ9c\" data-spl=\"/setprefs?hl=en&amp;prev=https://www.google.com/?pccc%3D1&amp;sig=0_j9_MRymEzNrdEjKJMF1kTPF3AVc%3D&amp;cs=2\" id=\"YUIDDb\" role=\"menuitem\" tabindex=\"-1\">",
+                    "html": "<div class=\"y0fQ9c\" data-spl=\"/setprefs?hl=en&amp;prev=https://www.google.com/?pccc%3D1&amp;sig=0_UZamROOmlx0Dt0UXxWIhG3e-mgc%3D&amp;cs=2\" id=\"YUIDDb\" role=\"menuitem\" tabindex=\"-1\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2593,7 +2566,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"fXO0xe\" class=\"tFYjZe\" data-bsdm=\"0\" data-btf=\"0\" data-hbc=\"#1a73e8\" data-htc=\"#fff\" data-spt=\"1\" data-tsdm=\"0\" role=\"link\" tabindex=\"0\" jsaction=\"ok5gFc;x6BCfb:ggFCce;w3Ukrf:aelxJb\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQqsEHCCQ\">",
+                    "html": "<div jscontroller=\"fXO0xe\" class=\"tFYjZe\" data-bsdm=\"0\" data-btf=\"0\" data-hbc=\"#1a73e8\" data-htc=\"#fff\" data-spt=\"1\" data-tsdm=\"0\" role=\"link\" tabindex=\"0\" jsaction=\"ok5gFc;x6BCfb:ggFCce;w3Ukrf:aelxJb\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQqsEHCCQ\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2624,7 +2597,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQvs8DCAg\">",
+                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQvs8DCAg\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2642,7 +2615,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQhqEICAk\">",
+                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQhqEICAk\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2660,7 +2633,25 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div></div>",
+                    "html": "<a jscontroller=\"Jlf2lc\" class=\"m5Qfy\" jsdata=\"fXexJ;_;BDKeio\" rel=\"nofollow\" role=\"button\" tabindex=\"0\" jsaction=\"UEmoBd\" data-ved=\"2ahUKEwicjZqrg5iJAxW3L1kFHTIsFG4Q8IcBegQIAhAB\">WNBA Finals are on YouTube TV</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".m5Qfy"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "has-visible-text",
+                            "impact": "serious",
+                            "message": "Element has text that is visible to screen readers",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2769,25 +2760,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<div aria-hidden=\"false\" style=\"overflow: hidden; position: absolute; top: 0px; width: 370px; z-index: 991; height: 186px; margin-top: 70px; right: 0px; margin-right: 25px;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "div[aria-hidden=\"false\"]"
-                    ]
-                },
-                {
-                    "all": [
-                        {
-                            "data": null,
-                            "id": "aria-conditional-attr",
-                            "impact": "serious",
-                            "message": "ARIA attribute is allowed",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "any": [],
-                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ39UDCAY\">",
+                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ39UDCAY\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2805,7 +2778,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQvs8DCAg\">",
+                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQvs8DCAg\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2823,7 +2796,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQhqEICAk\">",
+                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQhqEICAk\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2841,7 +2814,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4dUDCBM\">",
+                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4dUDCBM\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2859,7 +2832,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQnRsIFA\">",
+                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQnRsIFA\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2877,7 +2850,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div></div>",
+                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2895,7 +2868,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div>",
+                    "html": "<div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -2957,24 +2930,6 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<iframe role=\"presentation\" frameborder=\"0\" scrolling=\"no\" name=\"callout\" src=\"https://ogs.google.com/widget/callout?prid=19037050&amp;pgid=19037049&amp;puid=9ceb59a7585b55bd&amp;eom=1&amp;cce=1&amp;dc=1&amp;origin=https%3A%2F%2Fwww.google.com&amp;cn=callout&amp;pid=1&amp;spid=538&amp;hl=en\" style=\"height: 100%; width: 100%; color-scheme: light;\">",
-                    "impact": null,
-                    "none": [
-                        {
-                            "data": null,
-                            "id": "deprecatedrole",
-                            "impact": "minor",
-                            "message": "ARIA role is not deprecated",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "target": [
-                        "iframe"
-                    ]
-                },
-                {
-                    "all": [],
-                    "any": [],
                     "html": "<form action=\"/search\" autocomplete=\"off\" method=\"GET\" role=\"search\">",
                     "impact": null,
                     "none": [
@@ -2993,7 +2948,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ39UDCAY\">",
+                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ39UDCAY\">",
                     "impact": null,
                     "none": [
                         {
@@ -3011,7 +2966,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQvs8DCAg\">",
+                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQvs8DCAg\">",
                     "impact": null,
                     "none": [
                         {
@@ -3029,7 +2984,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQhqEICAk\">",
+                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQhqEICAk\">",
                     "impact": null,
                     "none": [
                         {
@@ -3047,7 +3002,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4dUDCBM\">",
+                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4dUDCBM\">",
                     "impact": null,
                     "none": [
                         {
@@ -3065,7 +3020,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQnRsIFA\">",
+                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQnRsIFA\">",
                     "impact": null,
                     "none": [
                         {
@@ -3078,6 +3033,24 @@
                     ],
                     "target": [
                         "#gbqfbb"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<a jscontroller=\"Jlf2lc\" class=\"m5Qfy\" jsdata=\"fXexJ;_;BDKeio\" rel=\"nofollow\" role=\"button\" tabindex=\"0\" jsaction=\"UEmoBd\" data-ved=\"2ahUKEwicjZqrg5iJAxW3L1kFHTIsFG4Q8IcBegQIAhAB\">WNBA Finals are on YouTube TV</a>",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "deprecatedrole",
+                            "impact": "minor",
+                            "message": "ARIA role is not deprecated",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".m5Qfy"
                     ]
                 },
                 {
@@ -3101,7 +3074,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div></div>",
+                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div></div>",
                     "impact": null,
                     "none": [
                         {
@@ -3257,7 +3230,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe LGiluc\" aria-hidden=\"true\" role=\"separator\" data-short-label=\"\" jsdata=\"zPXzie;_;BG2iW0\"></g-menu-item>",
+                    "html": "<g-menu-item jsname=\"NNJLud\" jscontroller=\"CnSW2d\" class=\"EpPYLd GZnQqe LGiluc\" aria-hidden=\"true\" role=\"separator\" data-short-label=\"\" jsdata=\"zPXzie;_;BDKGIU\"></g-menu-item>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -3357,25 +3330,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<div aria-hidden=\"false\" style=\"overflow: hidden; position: absolute; top: 0px; width: 370px; z-index: 991; height: 186px; margin-top: 70px; right: 0px; margin-right: 25px;\">",
-                    "impact": null,
-                    "none": [
-                        {
-                            "data": null,
-                            "id": "aria-prohibited-attr",
-                            "impact": "serious",
-                            "message": "ARIA attribute is allowed",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "target": [
-                        "div[aria-hidden=\"false\"]"
-                    ]
-                },
-                {
-                    "all": [],
-                    "any": [],
-                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ39UDCAY\">",
+                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ39UDCAY\">",
                     "impact": null,
                     "none": [
                         {
@@ -3393,7 +3348,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQvs8DCAg\">",
+                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQvs8DCAg\">",
                     "impact": null,
                     "none": [
                         {
@@ -3411,7 +3366,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQhqEICAk\">",
+                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQhqEICAk\">",
                     "impact": null,
                     "none": [
                         {
@@ -3429,7 +3384,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4dUDCBM\">",
+                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4dUDCBM\">",
                     "impact": null,
                     "none": [
                         {
@@ -3447,7 +3402,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQnRsIFA\">",
+                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQnRsIFA\">",
                     "impact": null,
                     "none": [
                         {
@@ -3465,7 +3420,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div></div>",
+                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div></div>",
                     "impact": null,
                     "none": [
                         {
@@ -3483,7 +3438,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div>",
+                    "html": "<div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div>",
                     "impact": null,
                     "none": [
                         {
@@ -3561,24 +3516,6 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<iframe role=\"presentation\" frameborder=\"0\" scrolling=\"no\" name=\"callout\" src=\"https://ogs.google.com/widget/callout?prid=19037050&amp;pgid=19037049&amp;puid=9ceb59a7585b55bd&amp;eom=1&amp;cce=1&amp;dc=1&amp;origin=https%3A%2F%2Fwww.google.com&amp;cn=callout&amp;pid=1&amp;spid=538&amp;hl=en\" style=\"height: 100%; width: 100%; color-scheme: light;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "iframe"
-                    ]
-                },
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": null,
-                            "id": "aria-required-attr",
-                            "impact": "critical",
-                            "message": "All required ARIA attributes are present",
-                            "relatedNodes": []
-                        }
-                    ],
                     "html": "<form action=\"/search\" autocomplete=\"off\" method=\"GET\" role=\"search\">",
                     "impact": null,
                     "none": [],
@@ -3597,7 +3534,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ39UDCAY\">",
+                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ39UDCAY\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -3615,7 +3552,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQvs8DCAg\">",
+                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQvs8DCAg\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -3633,7 +3570,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQhqEICAk\">",
+                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQhqEICAk\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -3651,7 +3588,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4dUDCBM\">",
+                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4dUDCBM\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -3669,11 +3606,29 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQnRsIFA\">",
+                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQnRsIFA\">",
                     "impact": null,
                     "none": [],
                     "target": [
                         "#gbqfbb"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-required-attr",
+                            "impact": "critical",
+                            "message": "All required ARIA attributes are present",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a jscontroller=\"Jlf2lc\" class=\"m5Qfy\" jsdata=\"fXexJ;_;BDKeio\" rel=\"nofollow\" role=\"button\" tabindex=\"0\" jsaction=\"UEmoBd\" data-ved=\"2ahUKEwicjZqrg5iJAxW3L1kFHTIsFG4Q8IcBegQIAhAB\">WNBA Finals are on YouTube TV</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".m5Qfy"
                     ]
                 },
                 {
@@ -3705,7 +3660,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div></div>",
+                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -3795,38 +3750,6 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<iframe role=\"presentation\" frameborder=\"0\" scrolling=\"no\" name=\"callout\" src=\"https://ogs.google.com/widget/callout?prid=19037050&amp;pgid=19037049&amp;puid=9ceb59a7585b55bd&amp;eom=1&amp;cce=1&amp;dc=1&amp;origin=https%3A%2F%2Fwww.google.com&amp;cn=callout&amp;pid=1&amp;spid=538&amp;hl=en\" style=\"height: 100%; width: 100%; color-scheme: light;\">",
-                    "impact": null,
-                    "none": [
-                        {
-                            "data": null,
-                            "id": "invalidrole",
-                            "impact": "critical",
-                            "message": "ARIA role is valid",
-                            "relatedNodes": []
-                        },
-                        {
-                            "data": null,
-                            "id": "abstractrole",
-                            "impact": "critical",
-                            "message": "Abstract roles are not used",
-                            "relatedNodes": []
-                        },
-                        {
-                            "data": null,
-                            "id": "unsupportedrole",
-                            "impact": "critical",
-                            "message": "ARIA role is supported",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "target": [
-                        "iframe"
-                    ]
-                },
-                {
-                    "all": [],
-                    "any": [],
                     "html": "<form action=\"/search\" autocomplete=\"off\" method=\"GET\" role=\"search\">",
                     "impact": null,
                     "none": [
@@ -3859,7 +3782,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ39UDCAY\">",
+                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ39UDCAY\">",
                     "impact": null,
                     "none": [
                         {
@@ -3891,7 +3814,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQvs8DCAg\">",
+                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQvs8DCAg\">",
                     "impact": null,
                     "none": [
                         {
@@ -3923,7 +3846,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQhqEICAk\">",
+                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQhqEICAk\">",
                     "impact": null,
                     "none": [
                         {
@@ -3955,7 +3878,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4dUDCBM\">",
+                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4dUDCBM\">",
                     "impact": null,
                     "none": [
                         {
@@ -3987,7 +3910,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQnRsIFA\">",
+                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQnRsIFA\">",
                     "impact": null,
                     "none": [
                         {
@@ -4014,6 +3937,38 @@
                     ],
                     "target": [
                         "#gbqfbb"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<a jscontroller=\"Jlf2lc\" class=\"m5Qfy\" jsdata=\"fXexJ;_;BDKeio\" rel=\"nofollow\" role=\"button\" tabindex=\"0\" jsaction=\"UEmoBd\" data-ved=\"2ahUKEwicjZqrg5iJAxW3L1kFHTIsFG4Q8IcBegQIAhAB\">WNBA Finals are on YouTube TV</a>",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "invalidrole",
+                            "impact": "critical",
+                            "message": "ARIA role is valid",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "abstractrole",
+                            "impact": "critical",
+                            "message": "Abstract roles are not used",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "unsupportedrole",
+                            "impact": "critical",
+                            "message": "ARIA role is supported",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".m5Qfy"
                     ]
                 },
                 {
@@ -4051,7 +4006,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div></div>",
+                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div></div>",
                     "impact": null,
                     "none": [
                         {
@@ -4249,39 +4204,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<div aria-hidden=\"false\" style=\"overflow: hidden; position: absolute; top: 0px; width: 370px; z-index: 991; height: 186px; margin-top: 70px; right: 0px; margin-right: 25px;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "div[aria-hidden=\"false\"]"
-                    ]
-                },
-                {
-                    "all": [
-                        {
-                            "data": null,
-                            "id": "aria-valid-attr-value",
-                            "impact": "critical",
-                            "message": "ARIA attribute values are valid",
-                            "relatedNodes": []
-                        },
-                        {
-                            "data": null,
-                            "id": "aria-errormessage",
-                            "impact": "critical",
-                            "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique",
-                            "relatedNodes": []
-                        },
-                        {
-                            "data": null,
-                            "id": "aria-level",
-                            "impact": "critical",
-                            "message": "aria-level values are valid",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "any": [],
-                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ39UDCAY\">",
+                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ39UDCAY\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -4313,7 +4236,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQvs8DCAg\">",
+                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQvs8DCAg\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -4345,7 +4268,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQhqEICAk\">",
+                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQhqEICAk\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -4377,7 +4300,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4dUDCBM\">",
+                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4dUDCBM\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -4409,7 +4332,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQnRsIFA\">",
+                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQnRsIFA\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -4441,7 +4364,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div></div>",
+                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -4547,25 +4470,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div aria-hidden=\"false\" style=\"overflow: hidden; position: absolute; top: 0px; width: 370px; z-index: 991; height: 186px; margin-top: 70px; right: 0px; margin-right: 25px;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "div[aria-hidden=\"false\"]"
-                    ]
-                },
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": null,
-                            "id": "aria-valid-attr",
-                            "impact": "critical",
-                            "message": "ARIA attribute name is valid",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ39UDCAY\">",
+                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ39UDCAY\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -4583,7 +4488,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQvs8DCAg\">",
+                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQvs8DCAg\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -4601,7 +4506,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQhqEICAk\">",
+                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQhqEICAk\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -4619,7 +4524,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4dUDCBM\">",
+                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4dUDCBM\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -4637,7 +4542,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQnRsIFA\">",
+                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQnRsIFA\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -4655,7 +4560,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div></div>",
+                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -4673,7 +4578,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div>",
+                    "html": "<div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -4707,7 +4612,7 @@
                         }
                     ],
                     "any": [],
-                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ39UDCAY\">",
+                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ39UDCAY\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -4788,70 +4693,6 @@
                         }
                     ],
                     "any": [],
-                    "html": "<div aria-hidden=\"false\" style=\"overflow: hidden; position: absolute; top: 0px; width: 370px; z-index: 991; height: 186px; margin-top: 70px; right: 0px; margin-right: 25px;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "div[aria-hidden=\"false\"]"
-                    ]
-                },
-                {
-                    "all": [
-                        {
-                            "data": null,
-                            "id": "important-letter-spacing",
-                            "impact": "serious",
-                            "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum",
-                            "relatedNodes": []
-                        },
-                        {
-                            "data": null,
-                            "id": "important-word-spacing",
-                            "impact": "serious",
-                            "message": "word-spacing in the style attribute is not set to !important, or meets the minimum",
-                            "relatedNodes": []
-                        },
-                        {
-                            "data": null,
-                            "id": "important-line-height",
-                            "impact": "serious",
-                            "message": "line-height in the style attribute is not set to !important, or meets the minimum",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "any": [],
-                    "html": "<iframe role=\"presentation\" frameborder=\"0\" scrolling=\"no\" name=\"callout\" src=\"https://ogs.google.com/widget/callout?prid=19037050&amp;pgid=19037049&amp;puid=9ceb59a7585b55bd&amp;eom=1&amp;cce=1&amp;dc=1&amp;origin=https%3A%2F%2Fwww.google.com&amp;cn=callout&amp;pid=1&amp;spid=538&amp;hl=en\" style=\"height: 100%; width: 100%; color-scheme: light;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "iframe"
-                    ]
-                },
-                {
-                    "all": [
-                        {
-                            "data": null,
-                            "id": "important-letter-spacing",
-                            "impact": "serious",
-                            "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum",
-                            "relatedNodes": []
-                        },
-                        {
-                            "data": null,
-                            "id": "important-word-spacing",
-                            "impact": "serious",
-                            "message": "word-spacing in the style attribute is not set to !important, or meets the minimum",
-                            "relatedNodes": []
-                        },
-                        {
-                            "data": null,
-                            "id": "important-line-height",
-                            "impact": "serious",
-                            "message": "line-height in the style attribute is not set to !important, or meets the minimum",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "any": [],
                     "html": "<span class=\"QCzoEc z1asCe MZy1Rb\" style=\"height:20px;line-height:20px;width:20px\">",
                     "impact": null,
                     "none": [],
@@ -4889,6 +4730,38 @@
                     "none": [],
                     "target": [
                         "div[jsmodel=\"b5W85 vNzKHd\"] > div:nth-child(2)"
+                    ]
+                },
+                {
+                    "all": [
+                        {
+                            "data": null,
+                            "id": "important-letter-spacing",
+                            "impact": "serious",
+                            "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "important-word-spacing",
+                            "impact": "serious",
+                            "message": "word-spacing in the style attribute is not set to !important, or meets the minimum",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "important-line-height",
+                            "impact": "serious",
+                            "message": "line-height in the style attribute is not set to !important, or meets the minimum",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "any": [],
+                    "html": "<img id=\"promo_image\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABWUlEQVR4Ae3ZAcYCQRjG8SEIYH2B6ARdYRVAAN2hEoAA6hirCwQRdIC0BEQIC0ABQbIoQD3f8yZMRDCz9s28+iFQf2p3ZtYAUC0EUAgIAaUTAoyJqE09GtOUZrSkNW0poyNdKLfgi9xyoSNltKU1LWlGUxpTj9oUfQ8wJqYNoaQ2FH8OMGZAd0LJ3WnwHsAqJV/ejojtgJSgTPoM4KtGD4UBD/qTgA5BqY4EjBQHjCQgURyQSMCC4ES9XnTAwu0VaLcDkgSIoqICUgnICE7s93jO+QwMh0Cl4jsgk4CT2wBr5H2r5TPgJAG5nwBr5nOg0fARkEvA1XuAzO0GTCZAteoy4CoB8B9gzeEAdLvOPrPgAGtWK6DZDAHqf0Lq/8TqL6Pqb2TqlxLqF3Pql9PqNzTqt5TqN/Xaj1Vqqg+2fudo8RXRV3S42//B43XFDzjUCAHlEwJCQAj4B5WiSEmqgGLsAAAAAElFTkSuQmCC\" style=\"height:32px;width:32px\" alt=\"\" data-csiid=\"UGESZ6WyFqOg5NoPv_-byAQ_12\" data-deferred=\"3\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#promo_image"
                     ]
                 }
             ],
@@ -4928,7 +4801,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"MV3Tnb\" href=\"https://about.google/?fg=1&amp;utm_source=google-US&amp;utm_medium=referral&amp;utm_campaign=hp-header\" data-jsarwt=\"1\" data-usg=\"AOvVaw13L0SpN0L7ycx9R0_i4R2S\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQkNQCCAI\">About</a>",
+                    "html": "<a class=\"MV3Tnb\" href=\"https://about.google/?fg=1&amp;utm_source=google-US&amp;utm_medium=referral&amp;utm_campaign=hp-header\" data-jsarwt=\"1\" data-usg=\"AOvVaw13L0SpN0L7ycx9R0_i4R2S\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQkNQCCAI\">About</a>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -4955,7 +4828,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"MV3Tnb\" href=\"https://store.google.com/US?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-US\" data-jsarwt=\"1\" data-usg=\"AOvVaw0wvkRBURf91YdMQCXOelDf\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQpMwCCAM\">Store</a>",
+                    "html": "<a class=\"MV3Tnb\" href=\"https://store.google.com/US?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-US\" data-jsarwt=\"1\" data-usg=\"AOvVaw0wvkRBURf91YdMQCXOelDf\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQpMwCCAM\">Store</a>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -5063,7 +4936,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ39UDCAY\">",
+                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ39UDCAY\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -5083,7 +4956,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4dUDCA8\">",
+                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4dUDCA8\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -5103,7 +4976,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input class=\"RNmpXc\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" type=\"submit\" jsaction=\"trigger.kWlxhc\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ19QECBA\">",
+                    "html": "<input class=\"RNmpXc\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" type=\"submit\" jsaction=\"trigger.kWlxhc\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ19QECBA\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -5130,7 +5003,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4dUDCBM\">",
+                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4dUDCBM\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -5157,11 +5030,65 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQnRsIFA\">",
+                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQnRsIFA\">",
                     "impact": null,
                     "none": [],
                     "target": [
                         "#gbqfbb"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 16.48,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#1f1f1f",
+                                "fontSize": "9.8pt (13px)",
+                                "fontWeight": "normal",
+                                "messageKey": null,
+                                "shadowColor": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 16.48",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<span> New York vs Minnesota. </span>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".hob1Ic > span"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 12.42,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#1a0dab",
+                                "fontSize": "9.8pt (13px)",
+                                "fontWeight": "normal",
+                                "messageKey": null,
+                                "shadowColor": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 12.42",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a jscontroller=\"Jlf2lc\" class=\"m5Qfy\" jsdata=\"fXexJ;_;BDKeio\" rel=\"nofollow\" role=\"button\" tabindex=\"0\" jsaction=\"UEmoBd\" data-ved=\"2ahUKEwicjZqrg5iJAxW3L1kFHTIsFG4Q8IcBegQIAhAB\">WNBA Finals are on YouTube TV</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".m5Qfy"
                     ]
                 },
                 {
@@ -5184,7 +5111,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"pHiOh\" href=\"https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw3XLzhicA5ZZW0afDbW0l2T\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQkdQCCBc\">",
+                    "html": "<a class=\"pHiOh\" href=\"https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw3XLzhicA5ZZW0afDbW0l2T\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQkdQCCBc\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -5211,7 +5138,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"pHiOh\" href=\"https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpbfooter&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw2SJ4zwRVXKyZr53qG9dm4K\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQktQCCBg\">",
+                    "html": "<a class=\"pHiOh\" href=\"https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpbfooter&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw2SJ4zwRVXKyZr53qG9dm4K\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQktQCCBg\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -5292,7 +5219,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"pHiOh\" href=\"https://policies.google.com/privacy?hl=en&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw25lN6TjyY2uszSImdhMejE\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ8awCCBo\">Privacy</a>",
+                    "html": "<a class=\"pHiOh\" href=\"https://policies.google.com/privacy?hl=en&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw25lN6TjyY2uszSImdhMejE\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ8awCCBo\">Privacy</a>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -5319,7 +5246,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"pHiOh\" href=\"https://policies.google.com/terms?hl=en&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw2d8Ahs2oc0jxVOgPfpr4Fe\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ8qwCCBs\">Terms</a>",
+                    "html": "<a class=\"pHiOh\" href=\"https://policies.google.com/terms?hl=en&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw2d8Ahs2oc0jxVOgPfpr4Fe\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ8qwCCBs\">Terms</a>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -5346,7 +5273,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div>",
+                    "html": "<div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -5466,7 +5393,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ39UDCAY\">",
+                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ39UDCAY\">",
                     "impact": null,
                     "none": [
                         {
@@ -5490,46 +5417,6 @@
                 "TT5.c",
                 "EN-301-549",
                 "EN-9.3.3.2"
-            ]
-        },
-        {
-            "description": "Ensure <iframe> and <frame> elements have an accessible name",
-            "help": "Frames must have an accessible name",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=axeAPI",
-            "id": "frame-title",
-            "impact": null,
-            "nodes": [
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": {
-                                "role": "presentation"
-                            },
-                            "id": "presentational-role",
-                            "impact": "serious",
-                            "message": "Element's default semantics were overridden with role=\"presentation\"",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "html": "<iframe role=\"presentation\" frameborder=\"0\" scrolling=\"no\" name=\"callout\" src=\"https://ogs.google.com/widget/callout?prid=19037050&amp;pgid=19037049&amp;puid=9ceb59a7585b55bd&amp;eom=1&amp;cce=1&amp;dc=1&amp;origin=https%3A%2F%2Fwww.google.com&amp;cn=callout&amp;pid=1&amp;spid=538&amp;hl=en\" style=\"height: 100%; width: 100%; color-scheme: light;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "iframe"
-                    ]
-                }
-            ],
-            "tags": [
-                "cat.text-alternatives",
-                "wcag2a",
-                "wcag412",
-                "section508",
-                "section508.22.i",
-                "TTv5",
-                "TT12.d",
-                "EN-301-549",
-                "EN-9.4.1.2"
             ]
         },
         {
@@ -5624,7 +5511,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<img class=\"lnXdpd\" alt=\"Google\" height=\"92\" src=\"/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png\" srcset=\"/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x\" width=\"272\" data-csiid=\"3bgRZ5HjM-SL9u8P6ZnT2AI_2\" data-atf=\"1\">",
+                    "html": "<img class=\"lnXdpd\" alt=\"Google\" height=\"92\" src=\"/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png\" srcset=\"/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x\" width=\"272\" data-csiid=\"UGESZ6WyFqOg5NoPv_-byAQ_1\" data-atf=\"1\">",
                     "impact": null,
                     "none": [
                         {
@@ -5659,7 +5546,42 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC\" class=\"Pb9hCb\" alt=\"\" data-csiid=\"3bgRZ5HjM-SL9u8P6ZnT2AI_1\" data-atf=\"1\">",
+                    "html": "<img id=\"promo_image\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABWUlEQVR4Ae3ZAcYCQRjG8SEIYH2B6ARdYRVAAN2hEoAA6hirCwQRdIC0BEQIC0ABQbIoQD3f8yZMRDCz9s28+iFQf2p3ZtYAUC0EUAgIAaUTAoyJqE09GtOUZrSkNW0poyNdKLfgi9xyoSNltKU1LWlGUxpTj9oUfQ8wJqYNoaQ2FH8OMGZAd0LJ3WnwHsAqJV/ejojtgJSgTPoM4KtGD4UBD/qTgA5BqY4EjBQHjCQgURyQSMCC4ES9XnTAwu0VaLcDkgSIoqICUgnICE7s93jO+QwMh0Cl4jsgk4CT2wBr5H2r5TPgJAG5nwBr5nOg0fARkEvA1XuAzO0GTCZAteoy4CoB8B9gzeEAdLvOPrPgAGtWK6DZDAHqf0Lq/8TqL6Pqb2TqlxLqF3Pql9PqNzTqt5TqN/Xaj1Vqqg+2fudo8RXRV3S42//B43XFDzjUCAHlEwJCQAj4B5WiSEmqgGLsAAAAAElFTkSuQmCC\" style=\"height:32px;width:32px\" alt=\"\" data-csiid=\"UGESZ6WyFqOg5NoPv_-byAQ_12\" data-deferred=\"3\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "alt-space-value",
+                            "impact": "critical",
+                            "message": "Element has a valid alt attribute value",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        "#promo_image"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "has-alt",
+                            "impact": "critical",
+                            "message": "Element has an alt attribute",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": {
+                                "role": "presentation"
+                            },
+                            "id": "presentational-role",
+                            "impact": "critical",
+                            "message": "Element's default semantics were overridden with role=\"presentation\"",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC\" class=\"Pb9hCb\" alt=\"\" data-csiid=\"UGESZ6WyFqOg5NoPv_-byAQ_11\" data-atf=\"1\">",
                     "impact": null,
                     "none": [
                         {
@@ -5699,7 +5621,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<img class=\"lnXdpd\" alt=\"Google\" height=\"92\" src=\"/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png\" srcset=\"/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x\" width=\"272\" data-csiid=\"3bgRZ5HjM-SL9u8P6ZnT2AI_2\" data-atf=\"1\">",
+                    "html": "<img class=\"lnXdpd\" alt=\"Google\" height=\"92\" src=\"/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png\" srcset=\"/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x\" width=\"272\" data-csiid=\"UGESZ6WyFqOg5NoPv_-byAQ_1\" data-atf=\"1\">",
                     "impact": null,
                     "none": [
                         {
@@ -5717,7 +5639,25 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC\" class=\"Pb9hCb\" alt=\"\" data-csiid=\"3bgRZ5HjM-SL9u8P6ZnT2AI_1\" data-atf=\"1\">",
+                    "html": "<img id=\"promo_image\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABWUlEQVR4Ae3ZAcYCQRjG8SEIYH2B6ARdYRVAAN2hEoAA6hirCwQRdIC0BEQIC0ABQbIoQD3f8yZMRDCz9s28+iFQf2p3ZtYAUC0EUAgIAaUTAoyJqE09GtOUZrSkNW0poyNdKLfgi9xyoSNltKU1LWlGUxpTj9oUfQ8wJqYNoaQ2FH8OMGZAd0LJ3WnwHsAqJV/ejojtgJSgTPoM4KtGD4UBD/qTgA5BqY4EjBQHjCQgURyQSMCC4ES9XnTAwu0VaLcDkgSIoqICUgnICE7s93jO+QwMh0Cl4jsgk4CT2wBr5H2r5TPgJAG5nwBr5nOg0fARkEvA1XuAzO0GTCZAteoy4CoB8B9gzeEAdLvOPrPgAGtWK6DZDAHqf0Lq/8TqL6Pqb2TqlxLqF3Pql9PqNzTqt5TqN/Xaj1Vqqg+2fudo8RXRV3S42//B43XFDzjUCAHlEwJCQAj4B5WiSEmqgGLsAAAAAElFTkSuQmCC\" style=\"height:32px;width:32px\" alt=\"\" data-csiid=\"UGESZ6WyFqOg5NoPv_-byAQ_12\" data-deferred=\"3\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "duplicate-img-label",
+                            "impact": "minor",
+                            "message": "Element does not duplicate existing text in <img> alt text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        "#promo_image"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC\" class=\"Pb9hCb\" alt=\"\" data-csiid=\"UGESZ6WyFqOg5NoPv_-byAQ_11\" data-atf=\"1\">",
                     "impact": null,
                     "none": [
                         {
@@ -5763,7 +5703,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4dUDCBM\">",
+                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4dUDCBM\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -5788,7 +5728,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQnRsIFA\">",
+                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQnRsIFA\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -5819,7 +5759,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ39UDCAY\">",
+                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ39UDCAY\">",
                     "impact": null,
                     "none": [
                         {
@@ -5865,7 +5805,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ39UDCAY\">",
+                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ39UDCAY\">",
                     "impact": null,
                     "none": [
                         {
@@ -6031,7 +5971,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"MV3Tnb\" href=\"https://about.google/?fg=1&amp;utm_source=google-US&amp;utm_medium=referral&amp;utm_campaign=hp-header\" data-jsarwt=\"1\" data-usg=\"AOvVaw13L0SpN0L7ycx9R0_i4R2S\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQkNQCCAI\">About</a>",
+                    "html": "<a class=\"MV3Tnb\" href=\"https://about.google/?fg=1&amp;utm_source=google-US&amp;utm_medium=referral&amp;utm_campaign=hp-header\" data-jsarwt=\"1\" data-usg=\"AOvVaw13L0SpN0L7ycx9R0_i4R2S\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQkNQCCAI\">About</a>",
                     "impact": null,
                     "none": [
                         {
@@ -6057,7 +5997,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"MV3Tnb\" href=\"https://store.google.com/US?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-US\" data-jsarwt=\"1\" data-usg=\"AOvVaw0wvkRBURf91YdMQCXOelDf\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQpMwCCAM\">Store</a>",
+                    "html": "<a class=\"MV3Tnb\" href=\"https://store.google.com/US?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-US\" data-jsarwt=\"1\" data-usg=\"AOvVaw0wvkRBURf91YdMQCXOelDf\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQpMwCCAM\">Store</a>",
                     "impact": null,
                     "none": [
                         {
@@ -6208,7 +6148,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"pHiOh\" href=\"https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw3XLzhicA5ZZW0afDbW0l2T\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQkdQCCBc\">",
+                    "html": "<a class=\"pHiOh\" href=\"https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw3XLzhicA5ZZW0afDbW0l2T\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQkdQCCBc\">",
                     "impact": null,
                     "none": [
                         {
@@ -6234,7 +6174,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"pHiOh\" href=\"https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpbfooter&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw2SJ4zwRVXKyZr53qG9dm4K\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQktQCCBg\">",
+                    "html": "<a class=\"pHiOh\" href=\"https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpbfooter&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw2SJ4zwRVXKyZr53qG9dm4K\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQktQCCBg\">",
                     "impact": null,
                     "none": [
                         {
@@ -6286,7 +6226,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"pHiOh\" href=\"https://sustainability.google/?utm_source=googlehpfooter&amp;utm_medium=housepromos&amp;utm_campaign=bottom-footer&amp;utm_content=\" data-jsarwt=\"1\" data-usg=\"AOvVaw139iVQTqD0Wi2hXWOWcEdi\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQiM8HCBk\">",
+                    "html": "<a class=\"pHiOh\" href=\"https://sustainability.google/?utm_source=googlehpfooter&amp;utm_medium=housepromos&amp;utm_campaign=bottom-footer&amp;utm_content=\" data-jsarwt=\"1\" data-usg=\"AOvVaw139iVQTqD0Wi2hXWOWcEdi\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQiM8HCBk\">",
                     "impact": null,
                     "none": [
                         {
@@ -6312,7 +6252,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"pHiOh\" href=\"https://policies.google.com/privacy?hl=en&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw25lN6TjyY2uszSImdhMejE\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ8awCCBo\">Privacy</a>",
+                    "html": "<a class=\"pHiOh\" href=\"https://policies.google.com/privacy?hl=en&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw25lN6TjyY2uszSImdhMejE\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ8awCCBo\">Privacy</a>",
                     "impact": null,
                     "none": [
                         {
@@ -6338,7 +6278,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"pHiOh\" href=\"https://policies.google.com/terms?hl=en&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw2d8Ahs2oc0jxVOgPfpr4Fe\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ8qwCCBs\">Terms</a>",
+                    "html": "<a class=\"pHiOh\" href=\"https://policies.google.com/terms?hl=en&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw2d8Ahs2oc0jxVOgPfpr4Fe\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ8qwCCBs\">Terms</a>",
                     "impact": null,
                     "none": [
                         {
@@ -6405,7 +6345,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<img class=\"lnXdpd\" alt=\"Google\" height=\"92\" src=\"/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png\" srcset=\"/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x\" width=\"272\" data-csiid=\"3bgRZ5HjM-SL9u8P6ZnT2AI_2\" data-atf=\"1\">",
+                    "html": "<img class=\"lnXdpd\" alt=\"Google\" height=\"92\" src=\"/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png\" srcset=\"/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x\" width=\"272\" data-csiid=\"UGESZ6WyFqOg5NoPv_-byAQ_1\" data-atf=\"1\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -6423,7 +6363,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQvs8DCAg\">",
+                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQvs8DCAg\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -6441,7 +6381,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQhqEICAk\">",
+                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQhqEICAk\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -6459,7 +6399,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4dUDCBM\">",
+                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4dUDCBM\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -6477,7 +6417,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQnRsIFA\">",
+                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQnRsIFA\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -6495,7 +6435,25 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div></div>",
+                    "html": "<a jscontroller=\"Jlf2lc\" class=\"m5Qfy\" jsdata=\"fXexJ;_;BDKeio\" rel=\"nofollow\" role=\"button\" tabindex=\"0\" jsaction=\"UEmoBd\" data-ved=\"2ahUKEwicjZqrg5iJAxW3L1kFHTIsFG4Q8IcBegQIAhAB\">WNBA Finals are on YouTube TV</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".m5Qfy"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "no-focusable-content",
+                            "impact": "serious",
+                            "message": "Element does not have focusable descendants",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -6523,7 +6481,7 @@
                 {
                     "all": [],
                     "any": [],
-                    "html": "<iframe role=\"presentation\" frameborder=\"0\" scrolling=\"no\" name=\"callout\" src=\"https://ogs.google.com/widget/callout?prid=19037050&amp;pgid=19037049&amp;puid=9ceb59a7585b55bd&amp;eom=1&amp;cce=1&amp;dc=1&amp;origin=https%3A%2F%2Fwww.google.com&amp;cn=callout&amp;pid=1&amp;spid=538&amp;hl=en\" style=\"height: 100%; width: 100%; color-scheme: light;\">",
+                    "html": "<img id=\"promo_image\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABWUlEQVR4Ae3ZAcYCQRjG8SEIYH2B6ARdYRVAAN2hEoAA6hirCwQRdIC0BEQIC0ABQbIoQD3f8yZMRDCz9s28+iFQf2p3ZtYAUC0EUAgIAaUTAoyJqE09GtOUZrSkNW0poyNdKLfgi9xyoSNltKU1LWlGUxpTj9oUfQ8wJqYNoaQ2FH8OMGZAd0LJ3WnwHsAqJV/ejojtgJSgTPoM4KtGD4UBD/qTgA5BqY4EjBQHjCQgURyQSMCC4ES9XnTAwu0VaLcDkgSIoqICUgnICE7s93jO+QwMh0Cl4jsgk4CT2wBr5H2r5TPgJAG5nwBr5nOg0fARkEvA1XuAzO0GTCZAteoy4CoB8B9gzeEAdLvOPrPgAGtWK6DZDAHqf0Lq/8TqL6Pqb2TqlxLqF3Pql9PqNzTqt5TqN/Xaj1Vqqg+2fudo8RXRV3S42//B43XFDzjUCAHlEwJCQAj4B5WiSEmqgGLsAAAAAElFTkSuQmCC\" style=\"height:32px;width:32px\" alt=\"\" data-csiid=\"UGESZ6WyFqOg5NoPv_-byAQ_12\" data-deferred=\"3\">",
                     "impact": null,
                     "none": [
                         {
@@ -6542,13 +6500,13 @@
                         }
                     ],
                     "target": [
-                        "iframe"
+                        "#promo_image"
                     ]
                 },
                 {
                     "all": [],
                     "any": [],
-                    "html": "<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC\" class=\"Pb9hCb\" alt=\"\" data-csiid=\"3bgRZ5HjM-SL9u8P6ZnT2AI_1\" data-atf=\"1\">",
+                    "html": "<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC\" class=\"Pb9hCb\" alt=\"\" data-csiid=\"UGESZ6WyFqOg5NoPv_-byAQ_11\" data-atf=\"1\">",
                     "impact": null,
                     "none": [
                         {
@@ -6637,7 +6595,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"MV3Tnb\" href=\"https://about.google/?fg=1&amp;utm_source=google-US&amp;utm_medium=referral&amp;utm_campaign=hp-header\" data-jsarwt=\"1\" data-usg=\"AOvVaw13L0SpN0L7ycx9R0_i4R2S\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQkNQCCAI\">About</a>",
+                    "html": "<a class=\"MV3Tnb\" href=\"https://about.google/?fg=1&amp;utm_source=google-US&amp;utm_medium=referral&amp;utm_campaign=hp-header\" data-jsarwt=\"1\" data-usg=\"AOvVaw13L0SpN0L7ycx9R0_i4R2S\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQkNQCCAI\">About</a>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -6657,7 +6615,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"MV3Tnb\" href=\"https://store.google.com/US?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-US\" data-jsarwt=\"1\" data-usg=\"AOvVaw0wvkRBURf91YdMQCXOelDf\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQpMwCCAM\">Store</a>",
+                    "html": "<a class=\"MV3Tnb\" href=\"https://store.google.com/US?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-US\" data-jsarwt=\"1\" data-usg=\"AOvVaw0wvkRBURf91YdMQCXOelDf\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQpMwCCAM\">Store</a>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -7077,46 +7035,6 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div aria-hidden=\"false\" style=\"overflow: hidden; position: absolute; top: 0px; width: 370px; z-index: 991; height: 186px; margin-top: 70px; right: 0px; margin-right: 25px;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "div[aria-hidden=\"false\"]"
-                    ]
-                },
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": {
-                                "isIframe": true
-                            },
-                            "id": "region",
-                            "impact": "moderate",
-                            "message": "All page content is contained by landmarks",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "html": "<iframe role=\"presentation\" frameborder=\"0\" scrolling=\"no\" name=\"callout\" src=\"https://ogs.google.com/widget/callout?prid=19037050&amp;pgid=19037049&amp;puid=9ceb59a7585b55bd&amp;eom=1&amp;cce=1&amp;dc=1&amp;origin=https%3A%2F%2Fwww.google.com&amp;cn=callout&amp;pid=1&amp;spid=538&amp;hl=en\" style=\"height: 100%; width: 100%; color-scheme: light;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "iframe"
-                    ]
-                },
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": {
-                                "isIframe": false
-                            },
-                            "id": "region",
-                            "impact": "moderate",
-                            "message": "All page content is contained by landmarks",
-                            "relatedNodes": []
-                        }
-                    ],
                     "html": "<div class=\"o3j99 LLD4me yr19Zb LS8OJ\">",
                     "impact": null,
                     "none": [],
@@ -7197,7 +7115,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jsmodel=\"b5W85 vNzKHd\" jsdata=\"MuIEvd;_;BG2iWk\">",
+                    "html": "<div jsmodel=\"b5W85 vNzKHd\" jsdata=\"MuIEvd;_;BDKGIE\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -7417,7 +7335,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ39UDCAY\">",
+                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ39UDCAY\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -7477,7 +7395,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQvs8DCAg\">",
+                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQvs8DCAg\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -7597,7 +7515,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQhqEICAk\">",
+                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQhqEICAk\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -7777,7 +7695,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jsname=\"mvaK7d\" class=\"M8H8pb\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4d8ICBI\"></div>",
+                    "html": "<div jsname=\"mvaK7d\" class=\"M8H8pb\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4d8ICBI\"></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -7837,7 +7755,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4dUDCBM\">",
+                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4dUDCBM\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -7857,7 +7775,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQnRsIFA\">",
+                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQnRsIFA\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -7897,7 +7815,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div id=\"tophf\"><input name=\"sca_esv\" value=\"339a018dea4bc811\" type=\"hidden\"><input name=\"source\" type=\"hidden\" value=\"hp\"><input value=\"3bgRZ5HjM-SL9u8P6ZnT2AI\" name=\"ei\" type=\"hidden\"><input value=\"AL9hbdgAAAAAZxHG7VwO-wR8Z65wW8vF40BCImOKo0Je\" name=\"iflsig\" type=\"hidden\"></div>",
+                    "html": "<div id=\"tophf\"><input name=\"sca_esv\" value=\"4bbd28f93242c723\" type=\"hidden\"><input name=\"source\" type=\"hidden\" value=\"hp\"><input value=\"UGESZ6WyFqOg5NoPv_-byAQ\" name=\"ei\" type=\"hidden\"><input value=\"AL9hbdgAAAAAZxJvYNdUNSTtmc3UVYE-o_RB1CG0sJ4q\" name=\"iflsig\" type=\"hidden\"></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -7957,11 +7875,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"ms4mZb\" jsname=\"FAeNCb\" data-aipm=\"1\" data-eaip=\"true\" data-endpoint=\"2\" data-oaipm=\"0\" id=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_8\" data-jiis=\"up\" data-async-type=\"hpba\" class=\"yp\" jsaction=\"rcuQ6b:npT2md\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQj-0KCBU\" eid=\"3rgRZ8rcBaH-ptQP64zpqAY\">",
+                    "html": "<div jscontroller=\"ms4mZb\" jsname=\"FAeNCb\" data-aipm=\"1\" data-eaip=\"true\" data-endpoint=\"2\" data-oaipm=\"0\" id=\"_UGESZ6WyFqOg5NoPv_-byAQ_8\" data-jiis=\"up\" data-async-type=\"hpba\" class=\"yp\" jsaction=\"rcuQ6b:npT2md\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQj-0KCBU\" eid=\"UGESZ5ylHrff5NoPstjQ8AY\">",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "#_3bgRZ5HjM-SL9u8P6ZnT2AI_8"
+                        "#_UGESZ6WyFqOg5NoPv_-byAQ_8"
                     ]
                 },
                 {
@@ -7977,11 +7895,191 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jsname=\"Nll0ne\"></div>",
+                    "html": "<div>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "#_3bgRZ5HjM-SL9u8P6ZnT2AI_8 > div[jsname=\"Nll0ne\"]"
+                        "#_UGESZ6WyFqOg5NoPv_-byAQ_8 > div"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div jscontroller=\"HK6Tmb\" id=\"19044597\" jsdata=\"mdTxac;_;BDKeik\" jsshadow=\"\" jsaction=\"loREK:uRTk8e;BY9dl:nl3Tdb;SJu0Rc:MHnLye\" data-hveid=\"CAEQAA\" data-ved=\"2ahUKEwicjZqrg5iJAxW3L1kFHTIsFG4QkZ4KKAB6BAgBEAA\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#\\31 9044597"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div jsslot=\"\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "div[jsslot=\"\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "div[jsslot=\"\"] > div"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<promo-middle-slot>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "promo-middle-slot"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div class=\"hob1Ic\" data-ved=\"2ahUKEwicjZqrg5iJAxW3L1kFHTIsFG4QnIcBegQIAhAA\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".hob1Ic"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<image-options class=\"FOdOy\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "image-options"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<promo-image class=\"vqbdjd\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "promo-image"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<img id=\"promo_image\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABWUlEQVR4Ae3ZAcYCQRjG8SEIYH2B6ARdYRVAAN2hEoAA6hirCwQRdIC0BEQIC0ABQbIoQD3f8yZMRDCz9s28+iFQf2p3ZtYAUC0EUAgIAaUTAoyJqE09GtOUZrSkNW0poyNdKLfgi9xyoSNltKU1LWlGUxpTj9oUfQ8wJqYNoaQ2FH8OMGZAd0LJ3WnwHsAqJV/ejojtgJSgTPoM4KtGD4UBD/qTgA5BqY4EjBQHjCQgURyQSMCC4ES9XnTAwu0VaLcDkgSIoqICUgnICE7s93jO+QwMh0Cl4jsgk4CT2wBr5H2r5TPgJAG5nwBr5nOg0fARkEvA1XuAzO0GTCZAteoy4CoB8B9gzeEAdLvOPrPgAGtWK6DZDAHqf0Lq/8TqL6Pqb2TqlxLqF3Pql9PqNzTqt5TqN/Xaj1Vqqg+2fudo8RXRV3S42//B43XFDzjUCAHlEwJCQAj4B5WiSEmqgGLsAAAAAElFTkSuQmCC\" style=\"height:32px;width:32px\" alt=\"\" data-csiid=\"UGESZ6WyFqOg5NoPv_-byAQ_12\" data-deferred=\"3\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#promo_image"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a jscontroller=\"Jlf2lc\" class=\"m5Qfy\" jsdata=\"fXexJ;_;BDKeio\" rel=\"nofollow\" role=\"button\" tabindex=\"0\" jsaction=\"UEmoBd\" data-ved=\"2ahUKEwicjZqrg5iJAxW3L1kFHTIsFG4Q8IcBegQIAhAB\">WNBA Finals are on YouTube TV</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".m5Qfy"
                     ]
                 },
                 {
@@ -8017,11 +8115,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"ms4mZb\" jsname=\"FAeNCb\" data-aipm=\"1\" data-eaip=\"true\" data-endpoint=\"1\" data-istweed=\"true\" data-oaipm=\"0\" id=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_9\" data-jiis=\"up\" data-async-type=\"hpba\" class=\"yf\" jsaction=\"rcuQ6b:npT2md\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQj-0KCBY\" eid=\"3rgRZ4aBEM_aptQP1fKiuQ0\">",
+                    "html": "<div jscontroller=\"ms4mZb\" jsname=\"FAeNCb\" data-aipm=\"1\" data-eaip=\"true\" data-endpoint=\"1\" data-istweed=\"true\" data-oaipm=\"0\" id=\"_UGESZ6WyFqOg5NoPv_-byAQ_9\" data-jiis=\"up\" data-async-type=\"hpba\" class=\"yf\" jsaction=\"rcuQ6b:npT2md\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQj-0KCBY\" eid=\"UGESZ5HwKs_T5NoPlo6M6QU\">",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "#_3bgRZ5HjM-SL9u8P6ZnT2AI_9"
+                        "#_UGESZ6WyFqOg5NoPv_-byAQ_9"
                     ]
                 },
                 {
@@ -8041,7 +8139,7 @@
                     "impact": null,
                     "none": [],
                     "target": [
-                        "#_3bgRZ5HjM-SL9u8P6ZnT2AI_9 > div[jsname=\"Nll0ne\"]"
+                        "div[jsname=\"Nll0ne\"]"
                     ]
                 },
                 {
@@ -8137,7 +8235,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"pHiOh\" href=\"https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw3XLzhicA5ZZW0afDbW0l2T\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQkdQCCBc\">",
+                    "html": "<a class=\"pHiOh\" href=\"https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw3XLzhicA5ZZW0afDbW0l2T\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQkdQCCBc\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -8157,7 +8255,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"pHiOh\" href=\"https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpbfooter&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw2SJ4zwRVXKyZr53qG9dm4K\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQktQCCBg\">",
+                    "html": "<a class=\"pHiOh\" href=\"https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpbfooter&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw2SJ4zwRVXKyZr53qG9dm4K\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQktQCCBg\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -8217,7 +8315,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"pHiOh\" href=\"https://sustainability.google/?utm_source=googlehpfooter&amp;utm_medium=housepromos&amp;utm_campaign=bottom-footer&amp;utm_content=\" data-jsarwt=\"1\" data-usg=\"AOvVaw139iVQTqD0Wi2hXWOWcEdi\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQiM8HCBk\">",
+                    "html": "<a class=\"pHiOh\" href=\"https://sustainability.google/?utm_source=googlehpfooter&amp;utm_medium=housepromos&amp;utm_campaign=bottom-footer&amp;utm_content=\" data-jsarwt=\"1\" data-usg=\"AOvVaw139iVQTqD0Wi2hXWOWcEdi\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQiM8HCBk\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -8237,7 +8335,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC\" class=\"Pb9hCb\" alt=\"\" data-csiid=\"3bgRZ5HjM-SL9u8P6ZnT2AI_1\" data-atf=\"1\">",
+                    "html": "<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC\" class=\"Pb9hCb\" alt=\"\" data-csiid=\"UGESZ6WyFqOg5NoPv_-byAQ_11\" data-atf=\"1\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -8297,7 +8395,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"pHiOh\" href=\"https://policies.google.com/privacy?hl=en&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw25lN6TjyY2uszSImdhMejE\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ8awCCBo\">Privacy</a>",
+                    "html": "<a class=\"pHiOh\" href=\"https://policies.google.com/privacy?hl=en&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw25lN6TjyY2uszSImdhMejE\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ8awCCBo\">Privacy</a>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -8317,7 +8415,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<a class=\"pHiOh\" href=\"https://policies.google.com/terms?hl=en&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw2d8Ahs2oc0jxVOgPfpr4Fe\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ8qwCCBs\">Terms</a>",
+                    "html": "<a class=\"pHiOh\" href=\"https://policies.google.com/terms?hl=en&amp;fg=1\" data-jsarwt=\"1\" data-usg=\"AOvVaw2d8Ahs2oc0jxVOgPfpr4Fe\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ8qwCCBs\">Terms</a>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -8377,7 +8475,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<g-popup jsname=\"V68bde\" jscontroller=\"DPreE\" jsaction=\"A05xBd:IYtByb;EOZ57e:WFrRFb;\" jsdata=\"mVjAjf;_;BG2iWs\">",
+                    "html": "<g-popup jsname=\"V68bde\" jscontroller=\"DPreE\" jsaction=\"A05xBd:IYtByb;EOZ57e:WFrRFb;\" jsdata=\"mVjAjf;_;BDKGIM\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -8397,7 +8495,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div></div>",
+                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -8417,7 +8515,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div>",
+                    "html": "<div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -8517,7 +8615,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div style=\"display:'none'\" jscontroller=\"KHourd\" jsdata=\"C4mkuf;_;BG2iW4\" jsaction=\"rcuQ6b:npT2md\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQuqMJCCU\"></div>",
+                    "html": "<div style=\"display:'none'\" jscontroller=\"KHourd\" jsdata=\"C4mkuf;_;BDKGIY\" jsaction=\"rcuQ6b:npT2md\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQuqMJCCU\"></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -8566,7 +8664,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQvs8DCAg\">",
+                    "html": "<div jscontroller=\"unV4T\" jsname=\"F7uqIe\" class=\"XDyW0e\" aria-label=\"Search by voice\" role=\"button\" tabindex=\"0\" jsaction=\"h5M12e;rcuQ6b:npT2md\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQvs8DCAg\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -8584,7 +8682,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQhqEICAk\">",
+                    "html": "<div jscontroller=\"lpsUAf\" class=\"nDcEnd\" data-base-lens-url=\"https://lens.google.com\" data-image-processor-enabled=\"true\" data-is-images-mode=\"false\" data-preferred-mime-type=\"image/jpeg\" data-propagated-experiment-ids=\"\" jsname=\"R5mgy\" aria-label=\"Search by image\" role=\"button\" tabindex=\"0\" jsaction=\"rcuQ6b:npT2md;h5M12e\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQhqEICAk\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -8602,7 +8700,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ4dUDCBM\">",
+                    "html": "<input class=\"gNO89b\" value=\"Google Search\" aria-label=\"Google Search\" name=\"btnK\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ4dUDCBM\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -8620,7 +8718,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQnRsIFA\">",
+                    "html": "<input id=\"gbqfbb\" value=\"I'm Feeling Lucky\" aria-label=\"I'm Feeling Lucky\" name=\"btnI\" role=\"button\" tabindex=\"0\" type=\"submit\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQnRsIFA\">",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -8638,7 +8736,25 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_3bgRZ5HjM-SL9u8P6ZnT2AI_10\" aria-haspopup=\"true\">Settings</div></div>",
+                    "html": "<a jscontroller=\"Jlf2lc\" class=\"m5Qfy\" jsdata=\"fXexJ;_;BDKeio\" rel=\"nofollow\" role=\"button\" tabindex=\"0\" jsaction=\"UEmoBd\" data-ved=\"2ahUKEwicjZqrg5iJAxW3L1kFHTIsFG4Q8IcBegQIAhAB\">WNBA Finals are on YouTube TV</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".m5Qfy"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "tabindex",
+                            "impact": "serious",
+                            "message": "Element does not have a tabindex greater than 0",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div jsname=\"oYxtQd\" class=\"CcNe6e\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" jsaction=\"WFrRFb;keydown:uYT2Vb\"><div jsname=\"LgbsSe\" class=\"ayzqOc pHiOh\" aria-controls=\"_UGESZ6WyFqOg5NoPv_-byAQ_10\" aria-haspopup=\"true\">Settings</div></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -8666,7 +8782,7 @@
     "testRunner": {
         "name": "axe"
     },
-    "timestamp": "2024-10-18T01:24:47.031Z",
+    "timestamp": "2024-10-18T13:23:27.976Z",
     "toolOptions": {
         "reporter": "v1"
     },
@@ -8693,7 +8809,7 @@
                         }
                     ],
                     "failureSummary": "Fix any of the following:\n  ARIA role combobox is not allowed for given element",
-                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwjRxdzY4paJAxXkhf0HHenMFCsQ39UDCAY\">",
+                    "html": "<textarea class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" value=\"\" jsaction=\"paste:puy29d;\" aria-label=\"Search\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"APjFqb\" maxlength=\"2048\" name=\"q\" role=\"combobox\" rows=\"1\" spellcheck=\"false\" data-ved=\"0ahUKEwilmpKrg5iJAxUjEFkFHb__BkkQ39UDCAY\">",
                     "impact": "minor",
                     "none": [],
                     "target": [
@@ -8791,11 +8907,32 @@
                         }
                     ],
                     "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
-                    "html": "<img class=\"lnXdpd\" alt=\"Google\" height=\"92\" src=\"/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png\" srcset=\"/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x\" width=\"272\" data-csiid=\"3bgRZ5HjM-SL9u8P6ZnT2AI_2\" data-atf=\"1\">",
+                    "html": "<img class=\"lnXdpd\" alt=\"Google\" height=\"92\" src=\"/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png\" srcset=\"/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x\" width=\"272\" data-csiid=\"UGESZ6WyFqOg5NoPv_-byAQ_1\" data-atf=\"1\">",
                     "impact": "moderate",
                     "none": [],
                     "target": [
                         ".lnXdpd"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "Some page content is not contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                    "html": "<span> New York vs Minnesota. </span>",
+                    "impact": "moderate",
+                    "none": [],
+                    "target": [
+                        ".hob1Ic > span"
                     ]
                 }
             ],
