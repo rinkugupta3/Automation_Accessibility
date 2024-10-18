@@ -903,7 +903,7 @@
             "impact": null,
             "message": "Maximum call stack size exceeded",
             "nodes": [],
-            "stack": "RangeError: Maximum call stack size exceeded\n    at https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1\n    at Array.reduce (<anonymous>)\n    at au (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at xu (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at section (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at Lu (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at zu (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1\n    at d (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at hs (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)",
+            "stack": "RangeError: Maximum call stack size exceeded\n    at Object.hasOwnProperty (<anonymous>)\n    at tp.get (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1\n    at u (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at ru (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1\n    at Array.reduce (<anonymous>)\n    at au (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at xu (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at section (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)",
             "tags": [
                 "cat.aria",
                 "wcag2a",
@@ -1159,9 +1159,9 @@
             "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI",
             "id": "region",
             "impact": null,
-            "message": "Maximum call stack size exceeded",
+            "message": "Cannot resolve id references for non-DOM nodes",
             "nodes": [],
-            "stack": "RangeError: Maximum call stack size exceeded\n    at Object.hasOwnProperty (<anonymous>)\n    at tp.get (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at c (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1\n    at d (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at hs (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1\n    at Array.reduce (<anonymous>)\n    at u (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at ru (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)",
+            "stack": "TypeError: Cannot resolve id references for non-DOM nodes\n    at nu (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at au (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at xu (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at section (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at Lu (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at zu (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1\n    at d (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at hs (https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1)\n    at https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js:1:1",
             "tags": [
                 "cat.keyboard",
                 "best-practice"
@@ -15770,7 +15770,7 @@
     "testRunner": {
         "name": "axe"
     },
-    "timestamp": "2024-10-17T18:37:58.506Z",
+    "timestamp": "2024-10-18T14:01:55.478Z",
     "toolOptions": {
         "reporter": "v1"
     },

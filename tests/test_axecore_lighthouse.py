@@ -35,7 +35,7 @@ def test_accessibility_and_lighthouse_audit():
     # Set up the Selenium WebDriver (Chrome) using Service object
     logger.info("Setting up Chrome WebDriver")
     options = Options()
-    options.add_argument("--headless")  # Optional: Run Chrome in headless mode (no UI)
+    # options.add_argument("--headless")  # Optional: Run Chrome in headless mode (no UI)
     service = Service(ChromeDriverManager().install())  # Use Service to manage the ChromeDriver
     driver = webdriver.Chrome(service=service, options=options)
 
