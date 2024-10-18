@@ -65,19 +65,19 @@ stages:
           - task: PublishBuildArtifacts@1
             inputs:
               PathtoPublish: 'tests/accessibility_report.html'
-              ArtifactName: 'Accessibility HTML report'
+              ArtifactName: 'Accessibility HTML Report'
 
           # Publish pytest.log as build artifact
           - task: PublishBuildArtifacts@1
             inputs:
               PathtoPublish: 'tests/pytest.log'  # Ensure this path matches the logs folder
-            ArtifactName: 'PytestLog'
+              ArtifactName: 'PytestLog'
 
           # Publish accessibility JSON report
           - task: PublishBuildArtifacts@1
             inputs:
               PathtoPublish: 'tests/accessibility_report.json'
-            ArtifactName: 'Accessibility JSON report'
+              ArtifactName: 'Accessibility JSON Report'
 
           - task: PublishPipelineArtifact@1
             inputs:
@@ -125,19 +125,19 @@ stages:
           - task: PublishBuildArtifacts@1
             inputs:
               PathtoPublish: 'tests_login_home_webpage/accessibility_report.html'
-              ArtifactName: 'Accessibility HTML report'
+              ArtifactName: 'Accessibility HTML Report'
 
           # Publish pytest.log as build artifact
           - task: PublishBuildArtifacts@1
             inputs:
-              PathtoPublish: 'tests_login_home_webpage/pytest.log'  # Ensure this path matches the logs folder
-            ArtifactName: 'PytestLog'
+              PathtoPublish: 'tests_login_home_webpage/pytest.log'
+              ArtifactName: 'PytestLog'
 
           # Publish accessibility JSON report
           - task: PublishBuildArtifacts@1
             inputs:
               PathtoPublish: 'tests_login_home_webpage/accessibility_report.json'
-            ArtifactName: 'Accessibility JSON report'
+              ArtifactName: 'Accessibility JSON Report'
 
           - task: PublishPipelineArtifact@1
             inputs:
@@ -184,20 +184,20 @@ stages:
           # Publish Accessibility HTML Report
           - task: PublishBuildArtifacts@1
             inputs:
-              PathtoPublish: 'tests_login_home_webpage/accessibility_report.html'
-              ArtifactName: 'Accessibility HTML report'
+              PathtoPublish: 'tests_login_webpage/accessibility_report.html'
+              ArtifactName: 'Accessibility HTML Report'
 
           # Publish pytest.log as build artifact
           - task: PublishBuildArtifacts@1
             inputs:
-              PathtoPublish: 'tests_login_home_webpage/pytest.log'  # Ensure this path matches the logs folder
-            ArtifactName: 'PytestLog'
+              PathtoPublish: 'tests_login_webpage/pytest.log'
+              ArtifactName: 'PytestLog'
 
           # Publish accessibility JSON report
           - task: PublishBuildArtifacts@1
             inputs:
-              PathtoPublish: 'tests_login_home_webpage/accessibility_report.json'
-            ArtifactName: 'Accessibility JSON report'
+              PathtoPublish: 'tests_login_webpage/accessibility_report.json'
+              ArtifactName: 'Accessibility JSON Report'
 
           - task: PublishPipelineArtifact@1
             inputs:
