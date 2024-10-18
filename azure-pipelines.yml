@@ -1,3 +1,5 @@
+# Note.....in azure make all test files to headless=True
+# Note.....in azure uncomment "# options.add_argument("--headless")"
 trigger:
   branches:
     include:

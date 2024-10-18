@@ -30,7 +30,7 @@ pipeline {
                 // Run headless tests for accessibility
                 bat '''
                     set HEADLESS=true
-                    C:/Users/dhira/AppData/Local/Programs/Python/Python311/python.exe -m pytest tests/tests_axecore_lighthouse --html=tests/report_accessibility.html --maxfail=3 --disable-warnings -v
+                    C:/Users/dhira/AppData/Local/Programs/Python/Python311/python.exe -m pytest tests/ --html=tests/report_accessibility.html --maxfail=3 --disable-warnings -v
                 '''
             }
         }
@@ -39,7 +39,7 @@ pipeline {
                 // Run headless tests for Lighthouse
                 bat '''
                     set HEADLESS=true
-                    C:/Users/dhira/AppData/Local/Programs/Python/Python311/python.exe -m pytest tests/test_axecore_lighthouse.py --html=tests/report_axecore_lighthouse.html --maxfail=3 --disable-warnings -v
+                    C:/Users/dhira/AppData/Local/Programs/Python/Python311/python.exe -m pytest tests/ --html=tests/report_axecore_lighthouse.html --maxfail=3 --disable-warnings -v
                 '''
             }
         }
@@ -47,7 +47,7 @@ pipeline {
             steps {
                 bat '''
                     set HEADLESS=true
-                    C:/Users/dhira/AppData/Local/Programs/Python/Python311/python.exe -m pytest tests_login_home_webpage/test_login_home_webpage.py --html=tests_login_home_webpage/report_login_home_webpage.html --maxfail=3 --disable-warnings -v
+                    C:/Users/dhira/AppData/Local/Programs/Python/Python311/python.exe -m pytest tests_login_home_webpage/ --html=tests_login_home_webpage/report_login_home_webpage.html --maxfail=3 --disable-warnings -v
                 '''
             }
         }
@@ -55,7 +55,7 @@ pipeline {
             steps {
                 bat '''
                     set HEADLESS=true
-                    C:/Users/dhira/AppData/Local/Programs/Python/Python311/python.exe -m pytest tests_login_webpage/test_login_webpage.py --html=tests_login_webpage/report_login_webpage.html --maxfail=3 --disable-warnings -v
+                    C:/Users/dhira/AppData/Local/Programs/Python/Python311/python.exe -m pytest tests_login_webpage/ --html=tests_login_webpage/report_login_webpage.html --maxfail=3 --disable-warnings -v
                 '''
             }
         }
