@@ -916,7 +916,7 @@
                         }
                     ],
                     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
-                    "html": "<p data-v-bdd6d943=\"\" class=\"oxd-userdropdown-name\">manda user</p>",
+                    "html": "<p data-v-bdd6d943=\"\" class=\"oxd-userdropdown-name\">FirstNameTest LastNameTest</p>",
                     "impact": "serious",
                     "none": [],
                     "target": [
@@ -1228,6 +1228,32 @@
                     ],
                     "target": [
                         ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(4) > .orangehrm-buzz-widget-divider.oxd-divider[data-v-9f847659=\"\"]"
+                    ]
+                },
+                {
+                    "all": [
+                        {
+                            "data": null,
+                            "id": "aria-allowed-attr",
+                            "impact": "critical",
+                            "message": "ARIA attributes are used correctly for the defined role",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "any": [],
+                    "html": "<hr data-v-9f847659=\"\" data-v-f8f18dc0=\"\" class=\"oxd-divider orangehrm-buzz-widget-divider\" role=\"separator\" aria-orientation=\"horizontal\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "aria-unsupported-attr",
+                            "impact": "critical",
+                            "message": "ARIA attribute is supported",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-divider.oxd-divider[data-v-9f847659=\"\"]"
                     ]
                 },
                 {
@@ -1947,6 +1973,24 @@
                             "relatedNodes": []
                         }
                     ],
+                    "html": "<hr data-v-9f847659=\"\" data-v-f8f18dc0=\"\" class=\"oxd-divider orangehrm-buzz-widget-divider\" role=\"separator\" aria-orientation=\"horizontal\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-divider.oxd-divider[data-v-9f847659=\"\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-allowed-role",
+                            "impact": "minor",
+                            "message": "ARIA role is allowed for given element",
+                            "relatedNodes": []
+                        }
+                    ],
                     "html": "<svg data-v-bddebfba=\"\" data-v-133d244a=\"\" xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 500 500\" role=\"presentation\" class=\"oxd-icon orangehrm-dashboard-widget-icon\">",
                     "impact": null,
                     "none": [],
@@ -2217,6 +2261,24 @@
                     "none": [],
                     "target": [
                         ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(4) > .orangehrm-buzz-widget-divider.oxd-divider[data-v-9f847659=\"\"]"
+                    ]
+                },
+                {
+                    "all": [
+                        {
+                            "data": null,
+                            "id": "aria-conditional-attr",
+                            "impact": "serious",
+                            "message": "ARIA attribute is allowed",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "any": [],
+                    "html": "<hr data-v-9f847659=\"\" data-v-f8f18dc0=\"\" class=\"oxd-divider orangehrm-buzz-widget-divider\" role=\"separator\" aria-orientation=\"horizontal\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-divider.oxd-divider[data-v-9f847659=\"\"]"
                     ]
                 },
                 {
@@ -2904,6 +2966,24 @@
                 {
                     "all": [],
                     "any": [],
+                    "html": "<hr data-v-9f847659=\"\" data-v-f8f18dc0=\"\" class=\"oxd-divider orangehrm-buzz-widget-divider\" role=\"separator\" aria-orientation=\"horizontal\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "deprecatedrole",
+                            "impact": "minor",
+                            "message": "ARIA role is not deprecated",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-divider.oxd-divider[data-v-9f847659=\"\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
                     "html": "<svg data-v-bddebfba=\"\" data-v-133d244a=\"\" xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 500 500\" role=\"presentation\" class=\"oxd-icon orangehrm-dashboard-widget-icon\">",
                     "impact": null,
                     "none": [
@@ -3221,6 +3301,24 @@
                     ],
                     "target": [
                         ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(4) > .orangehrm-buzz-widget-divider.oxd-divider[data-v-9f847659=\"\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<hr data-v-9f847659=\"\" data-v-f8f18dc0=\"\" class=\"oxd-divider orangehrm-buzz-widget-divider\" role=\"separator\" aria-orientation=\"horizontal\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "aria-prohibited-attr",
+                            "impact": "serious",
+                            "message": "ARIA attribute is allowed",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-divider.oxd-divider[data-v-9f847659=\"\"]"
                     ]
                 },
                 {
@@ -3903,6 +4001,24 @@
                     "none": [],
                     "target": [
                         ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(4) > .orangehrm-buzz-widget-divider.oxd-divider[data-v-9f847659=\"\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-required-attr",
+                            "impact": "critical",
+                            "message": "All required ARIA attributes are present",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<hr data-v-9f847659=\"\" data-v-f8f18dc0=\"\" class=\"oxd-divider orangehrm-buzz-widget-divider\" role=\"separator\" aria-orientation=\"horizontal\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-divider.oxd-divider[data-v-9f847659=\"\"]"
                     ]
                 },
                 {
@@ -5084,6 +5200,38 @@
                 {
                     "all": [],
                     "any": [],
+                    "html": "<hr data-v-9f847659=\"\" data-v-f8f18dc0=\"\" class=\"oxd-divider orangehrm-buzz-widget-divider\" role=\"separator\" aria-orientation=\"horizontal\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "invalidrole",
+                            "impact": "critical",
+                            "message": "ARIA role is valid",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "abstractrole",
+                            "impact": "critical",
+                            "message": "Abstract roles are not used",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "unsupportedrole",
+                            "impact": "critical",
+                            "message": "ARIA role is supported",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-divider.oxd-divider[data-v-9f847659=\"\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
                     "html": "<svg data-v-bddebfba=\"\" data-v-133d244a=\"\" xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 500 500\" role=\"presentation\" class=\"oxd-icon orangehrm-dashboard-widget-icon\">",
                     "impact": null,
                     "none": [
@@ -5602,6 +5750,38 @@
                         }
                     ],
                     "any": [],
+                    "html": "<hr data-v-9f847659=\"\" data-v-f8f18dc0=\"\" class=\"oxd-divider orangehrm-buzz-widget-divider\" role=\"separator\" aria-orientation=\"horizontal\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-divider.oxd-divider[data-v-9f847659=\"\"]"
+                    ]
+                },
+                {
+                    "all": [
+                        {
+                            "data": null,
+                            "id": "aria-valid-attr-value",
+                            "impact": "critical",
+                            "message": "ARIA attribute values are valid",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "aria-errormessage",
+                            "impact": "critical",
+                            "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "aria-level",
+                            "impact": "critical",
+                            "message": "aria-level values are valid",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "any": [],
                     "html": "<hr data-v-9f847659=\"\" data-v-133d244a=\"\" class=\"oxd-divider\" role=\"separator\" aria-orientation=\"horizontal\">",
                     "impact": null,
                     "none": [],
@@ -5885,6 +6065,24 @@
                     "none": [],
                     "target": [
                         ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(4) > .orangehrm-buzz-widget-divider.oxd-divider[data-v-9f847659=\"\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-valid-attr",
+                            "impact": "critical",
+                            "message": "ARIA attribute name is valid",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<hr data-v-9f847659=\"\" data-v-f8f18dc0=\"\" class=\"oxd-divider orangehrm-buzz-widget-divider\" role=\"separator\" aria-orientation=\"horizontal\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-divider.oxd-divider[data-v-9f847659=\"\"]"
                     ]
                 },
                 {
@@ -6238,11 +6436,11 @@
                         }
                     ],
                     "any": [],
-                    "html": "<canvas id=\"SLmC_cWG\" width=\"326\" height=\"265\" style=\"display: block; box-sizing: border-box; height: 265px; width: 326px;\"></canvas>",
+                    "html": "<canvas id=\"oI7yujJR\" width=\"326\" height=\"265\" style=\"display: block; box-sizing: border-box; height: 265px; width: 326px;\"></canvas>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "#SLmC_cWG"
+                        "#oI7yujJR"
                     ]
                 },
                 {
@@ -6430,11 +6628,11 @@
                         }
                     ],
                     "any": [],
-                    "html": "<canvas id=\"exjpPs_1\" width=\"326\" height=\"265\" style=\"display: block; box-sizing: border-box; height: 265px; width: 326px;\"></canvas>",
+                    "html": "<canvas id=\"nFWut1Hz\" width=\"326\" height=\"265\" style=\"display: block; box-sizing: border-box; height: 265px; width: 326px;\"></canvas>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "#exjpPs_1"
+                        "#nFWut1Hz"
                     ]
                 },
                 {
@@ -7131,7 +7329,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-58bcc29e=\"\" class=\"oxd-text oxd-text--p orangehrm-attendance-card-details\">Punched Out: Mar 29th at 01:19 PM (GMT 7)</p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-58bcc29e=\"\" class=\"oxd-text oxd-text--p orangehrm-attendance-card-details\">Punched Out: Oct 18th at 04:48 PM (GMT 8)</p>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -7509,11 +7707,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-emp\">manda akhil user</p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-emp\">FirstNameTest ola LastNameTest</p>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(1) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-emp.oxd-text--p[data-v-f8f18dc0=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(1) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-emp.oxd-text--p"
                     ]
                 },
                 {
@@ -7536,11 +7734,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-body\">Hi All;\r\n\r\nLinda has been blessed with a baby boy!\r\n\r\n\r\n\r\nLinda: With love, we welcome your dear new baby to this world. Congratulations!</p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-body\">new post</p>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(1) > .orangehrm-buzz-widget-body.oxd-text--p[data-v-f8f18dc0=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(1) > .orangehrm-buzz-widget-body.oxd-text--p"
                     ]
                 },
                 {
@@ -7563,11 +7761,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-emp\">Sania  Shaheen</p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-emp\">FirstNameTest ola LastNameTest</p>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(2) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-emp.oxd-text--p[data-v-f8f18dc0=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(2) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-emp.oxd-text--p"
                     ]
                 },
                 {
@@ -7590,11 +7788,92 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-body\">",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-body\">new post</p>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(2) > .orangehrm-buzz-widget-body.oxd-text--p[data-v-f8f18dc0=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(2) > .orangehrm-buzz-widget-body.oxd-text--p"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 4.85,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#64728c",
+                                "fontSize": "9.0pt (12px)",
+                                "fontWeight": "bold",
+                                "messageKey": null,
+                                "shadowColor": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 4.85",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-emp\">FirstNameTest ola LastNameTest</p>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(3) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-emp.oxd-text--p"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 4.85,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#64728c",
+                                "fontSize": "9.0pt (12px)",
+                                "fontWeight": "normal",
+                                "messageKey": null,
+                                "shadowColor": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 4.85",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-body\">new post</p>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(3) > .orangehrm-buzz-widget-body.oxd-text--p"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 4.85,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#64728c",
+                                "fontSize": "9.0pt (12px)",
+                                "fontWeight": "bold",
+                                "messageKey": null,
+                                "shadowColor": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 4.85",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-emp\">FirstNameTest ola LastNameTest</p>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(4) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-emp.oxd-text--p"
                     ]
                 },
                 {
@@ -7860,11 +8139,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<span data-v-7b563373=\"\" data-v-28866788=\"\" class=\"oxd-text oxd-text--span\" title=\"New York Sales Office\">New York Sales Office</span>",
+                    "html": "<span data-v-7b563373=\"\" data-v-28866788=\"\" class=\"oxd-text oxd-text--span\" title=\"Texas R&amp;D\">Texas R&amp;D</span>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "span[title=\"New York Sales Office\"]"
+                        "span[title=\"Texas R&D\"]"
                     ]
                 },
                 {
@@ -7887,11 +8166,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<span data-v-7b563373=\"\" data-v-28866788=\"\" class=\"oxd-text oxd-text--span\" title=\"Texas R&amp;D\">Texas R&amp;D</span>",
+                    "html": "<span data-v-7b563373=\"\" data-v-28866788=\"\" class=\"oxd-text oxd-text--span\" title=\"New York Sales Office\">New York Sales Office</span>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "span[title=\"Texas R&D\"]"
+                        "span[title=\"New York Sales Office\"]"
                     ]
                 },
                 {
@@ -8109,7 +8388,7 @@
             "help": "Images must have alternate text",
             "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=axeAPI",
             "id": "image-alt",
-            "impact": "critical",
+            "impact": null,
             "nodes": [
                 {
                     "all": [],
@@ -8212,7 +8491,7 @@
                         }
                     ],
                     "target": [
-                        "img[src$=\"empNumber/7\"][alt=\"profile picture\"][data-v-06f466c6=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(1) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
                     ]
                 },
                 {
@@ -8226,7 +8505,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/22\">",
+                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\">",
                     "impact": null,
                     "none": [
                         {
@@ -8238,7 +8517,7 @@
                         }
                     ],
                     "target": [
-                        "img[src=\"../pim/viewPhoto/empNumber/22\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(2) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
                     ]
                 },
                 {
@@ -8252,7 +8531,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/11\">",
+                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\">",
                     "impact": null,
                     "none": [
                         {
@@ -8264,7 +8543,7 @@
                         }
                     ],
                     "target": [
-                        "img[src=\"../pim/viewPhoto/empNumber/11\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(3) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
                     ]
                 },
                 {
@@ -8278,7 +8557,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/9\">",
+                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\">",
                     "impact": null,
                     "none": [
                         {
@@ -8290,7 +8569,33 @@
                         }
                     ],
                     "target": [
-                        "img[src$=\"empNumber/9\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(4) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "has-alt",
+                            "impact": "critical",
+                            "message": "Element has an alt attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "alt-space-value",
+                            "impact": "critical",
+                            "message": "Element has a valid alt attribute value",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
                     ]
                 },
                 {
@@ -8410,13 +8715,13 @@
                         }
                     ],
                     "target": [
-                        "img[src$=\"empNumber/7\"][alt=\"profile picture\"][data-v-06f466c6=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(1) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
                     ]
                 },
                 {
                     "all": [],
                     "any": [],
-                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/22\">",
+                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\">",
                     "impact": null,
                     "none": [
                         {
@@ -8428,13 +8733,13 @@
                         }
                     ],
                     "target": [
-                        "img[src=\"../pim/viewPhoto/empNumber/22\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(2) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
                     ]
                 },
                 {
                     "all": [],
                     "any": [],
-                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/11\">",
+                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\">",
                     "impact": null,
                     "none": [
                         {
@@ -8446,13 +8751,13 @@
                         }
                     ],
                     "target": [
-                        "img[src=\"../pim/viewPhoto/empNumber/11\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(3) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
                     ]
                 },
                 {
                     "all": [],
                     "any": [],
-                    "html": "<img data-v-f8f18dc0=\"\" src=\"/web/index.php/buzz/photo/9\" class=\"orangehrm-buzz-widget-picture\">",
+                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\">",
                     "impact": null,
                     "none": [
                         {
@@ -8464,13 +8769,13 @@
                         }
                     ],
                     "target": [
-                        ".orangehrm-buzz-widget-picture"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(4) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
                     ]
                 },
                 {
                     "all": [],
                     "any": [],
-                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/9\">",
+                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\">",
                     "impact": null,
                     "none": [
                         {
@@ -8482,7 +8787,7 @@
                         }
                     ],
                     "target": [
-                        "img[src$=\"empNumber/9\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
                     ]
                 },
                 {
@@ -9667,7 +9972,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<li data-v-28866788=\"\"><span data-v-28866788=\"\" class=\"oxd-chart-legend-key\" style=\"background-color: rgb(254, 125, 21);\"></span><span data-v-7b563373=\"\" data-v-28866788=\"\" class=\"oxd-text oxd-text--span\" title=\"New York Sales Office\">New York Sales Office</span></li>",
+                    "html": "<li data-v-28866788=\"\"><span data-v-28866788=\"\" class=\"oxd-chart-legend-key\" style=\"background-color: rgb(254, 125, 21);\"></span><span data-v-7b563373=\"\" data-v-28866788=\"\" class=\"oxd-text oxd-text--span\" title=\"Texas R&amp;D\">Texas R&amp;D</span></li>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -9685,7 +9990,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<li data-v-28866788=\"\"><span data-v-28866788=\"\" class=\"oxd-chart-legend-key\" style=\"background-color: rgb(255, 170, 0);\"></span><span data-v-7b563373=\"\" data-v-28866788=\"\" class=\"oxd-text oxd-text--span\" title=\"Texas R&amp;D\">Texas R&amp;D</span></li>",
+                    "html": "<li data-v-28866788=\"\"><span data-v-28866788=\"\" class=\"oxd-chart-legend-key\" style=\"background-color: rgb(255, 170, 0);\"></span><span data-v-7b563373=\"\" data-v-28866788=\"\" class=\"oxd-text oxd-text--span\" title=\"New York Sales Office\">New York Sales Office</span></li>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -10185,7 +10490,7 @@
                     "impact": null,
                     "none": [],
                     "target": [
-                        "img[src$=\"empNumber/7\"][alt=\"profile picture\"][data-v-06f466c6=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(1) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
                     ]
                 },
                 {
@@ -10217,11 +10522,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/22\">",
+                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\">",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "img[src=\"../pim/viewPhoto/empNumber/22\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(2) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
                     ]
                 },
                 {
@@ -10253,11 +10558,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/11\">",
+                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\">",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "img[src=\"../pim/viewPhoto/empNumber/11\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(3) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
                     ]
                 },
                 {
@@ -10289,29 +10594,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<img data-v-f8f18dc0=\"\" src=\"/web/index.php/buzz/photo/9\" class=\"orangehrm-buzz-widget-picture\">",
+                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\">",
                     "impact": null,
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-picture"
-                    ]
-                },
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": null,
-                            "id": "no-focusable-content",
-                            "impact": "serious",
-                            "message": "Element does not have focusable descendants",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/9\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "img[src$=\"empNumber/9\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(4) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
                     ]
                 },
                 {
@@ -10330,6 +10617,42 @@
                     "none": [],
                     "target": [
                         ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(4) > .orangehrm-buzz-widget-divider.oxd-divider[data-v-9f847659=\"\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "no-focusable-content",
+                            "impact": "serious",
+                            "message": "Element does not have focusable descendants",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "no-focusable-content",
+                            "impact": "serious",
+                            "message": "Element does not have focusable descendants",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<hr data-v-9f847659=\"\" data-v-f8f18dc0=\"\" class=\"oxd-divider orangehrm-buzz-widget-divider\" role=\"separator\" aria-orientation=\"horizontal\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-divider.oxd-divider[data-v-9f847659=\"\"]"
                     ]
                 },
                 {
@@ -13824,7 +14147,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-bdd6d943=\"\" class=\"oxd-userdropdown-name\">manda user</p>",
+                    "html": "<p data-v-bdd6d943=\"\" class=\"oxd-userdropdown-name\">FirstNameTest LastNameTest</p>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -14284,7 +14607,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-58bcc29e=\"\" class=\"oxd-text oxd-text--p orangehrm-attendance-card-details\">Punched Out: Mar 29th at 01:19 PM (GMT 7)</p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-58bcc29e=\"\" class=\"oxd-text oxd-text--p orangehrm-attendance-card-details\">Punched Out: Oct 18th at 04:48 PM (GMT 8)</p>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -14324,7 +14647,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<b data-v-58bcc29e=\"\">0h</b>",
+                    "html": "<b data-v-58bcc29e=\"\">4h</b>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -14484,7 +14807,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div data-v-58bcc29e=\"\" class=\"orangehrm-attendance-card-summary-total\"><i data-v-bddebfba=\"\" data-v-58bcc29e=\"\" class=\"oxd-icon bi-stopwatch orangehrm-attendance-card-icon\"></i><p data-v-7b563373=\"\" data-v-58bcc29e=\"\" class=\"oxd-text oxd-text--p orangehrm-attendance-card-fulltime\">0h 0m </p></div>",
+                    "html": "<div data-v-58bcc29e=\"\" class=\"orangehrm-attendance-card-summary-total\"><i data-v-bddebfba=\"\" data-v-58bcc29e=\"\" class=\"oxd-icon bi-stopwatch orangehrm-attendance-card-icon\"></i><p data-v-7b563373=\"\" data-v-58bcc29e=\"\" class=\"oxd-text oxd-text--p orangehrm-attendance-card-fulltime\">8h 48m </p></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -14524,7 +14847,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-58bcc29e=\"\" class=\"oxd-text oxd-text--p orangehrm-attendance-card-fulltime\">0h 0m </p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-58bcc29e=\"\" class=\"oxd-text oxd-text--p orangehrm-attendance-card-fulltime\">8h 48m </p>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -16388,7 +16711,7 @@
                     "impact": null,
                     "none": [],
                     "target": [
-                        "img[src$=\"empNumber/7\"][alt=\"profile picture\"][data-v-06f466c6=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(1) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
                     ]
                 },
                 {
@@ -16424,11 +16747,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-emp\">manda akhil user</p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-emp\">FirstNameTest ola LastNameTest</p>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(1) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-emp.oxd-text--p[data-v-f8f18dc0=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(1) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-emp.oxd-text--p"
                     ]
                 },
                 {
@@ -16444,11 +16767,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-time\">2020-07-10 11:38 PM</p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-time\">2024-17-10 08:59 PM</p>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(1) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-time.oxd-text--p[data-v-f8f18dc0=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(1) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-time.oxd-text--p"
                     ]
                 },
                 {
@@ -16484,11 +16807,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-body\">Hi All;\r\n\r\nLinda has been blessed with a baby boy!\r\n\r\n\r\n\r\nLinda: With love, we welcome your dear new baby to this world. Congratulations!</p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-body\">new post</p>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(1) > .orangehrm-buzz-widget-body.oxd-text--p[data-v-f8f18dc0=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(1) > .orangehrm-buzz-widget-body.oxd-text--p"
                     ]
                 },
                 {
@@ -16544,7 +16867,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div data-v-06f466c6=\"\" data-v-f8f18dc0=\"\" class=\"orangehrm-buzz-profile-image\"><img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/22\"></div>",
+                    "html": "<div data-v-06f466c6=\"\" data-v-f8f18dc0=\"\" class=\"orangehrm-buzz-profile-image\"><img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\"></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -16564,11 +16887,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/22\">",
+                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\">",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "img[src=\"../pim/viewPhoto/empNumber/22\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(2) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
                     ]
                 },
                 {
@@ -16604,11 +16927,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-emp\">Sania  Shaheen</p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-emp\">FirstNameTest ola LastNameTest</p>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(2) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-emp.oxd-text--p[data-v-f8f18dc0=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(2) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-emp.oxd-text--p"
                     ]
                 },
                 {
@@ -16624,11 +16947,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-time\">2020-07-10 11:38 PM</p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-time\">2024-17-10 08:57 PM</p>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(2) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-time.oxd-text--p[data-v-f8f18dc0=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(2) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-time.oxd-text--p"
                     ]
                 },
                 {
@@ -16664,11 +16987,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-body\">",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-body\">new post</p>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(2) > .orangehrm-buzz-widget-body.oxd-text--p[data-v-f8f18dc0=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(2) > .orangehrm-buzz-widget-body.oxd-text--p"
                     ]
                 },
                 {
@@ -16724,7 +17047,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div data-v-06f466c6=\"\" data-v-f8f18dc0=\"\" class=\"orangehrm-buzz-profile-image\"><img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/11\"></div>",
+                    "html": "<div data-v-06f466c6=\"\" data-v-f8f18dc0=\"\" class=\"orangehrm-buzz-profile-image\"><img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\"></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -16744,11 +17067,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/11\">",
+                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\">",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "img[src=\"../pim/viewPhoto/empNumber/11\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(3) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
                     ]
                 },
                 {
@@ -16784,11 +17107,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-emp\">Rebecca  Harmony</p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-emp\">FirstNameTest ola LastNameTest</p>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(3) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-emp.oxd-text--p[data-v-f8f18dc0=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(3) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-emp.oxd-text--p"
                     ]
                 },
                 {
@@ -16804,11 +17127,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-time\">2020-07-10 11:34 PM</p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-time\">2024-17-10 08:52 PM</p>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(3) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-time.oxd-text--p[data-v-f8f18dc0=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(3) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-time.oxd-text--p"
                     ]
                 },
                 {
@@ -16844,31 +17167,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-body\"> Throwback Thursdays!! </p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-body\">new post</p>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(3) > .orangehrm-buzz-widget-body.oxd-text--p[data-v-f8f18dc0=\"\"]"
-                    ]
-                },
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": {
-                                "isIframe": false
-                            },
-                            "id": "region",
-                            "impact": "moderate",
-                            "message": "All page content is contained by landmarks",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "html": "<img data-v-f8f18dc0=\"\" src=\"/web/index.php/buzz/photo/9\" class=\"orangehrm-buzz-widget-picture\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        ".orangehrm-buzz-widget-picture"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(3) > .orangehrm-buzz-widget-body.oxd-text--p"
                     ]
                 },
                 {
@@ -16924,7 +17227,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div data-v-06f466c6=\"\" data-v-f8f18dc0=\"\" class=\"orangehrm-buzz-profile-image\"><img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/9\"></div>",
+                    "html": "<div data-v-06f466c6=\"\" data-v-f8f18dc0=\"\" class=\"orangehrm-buzz-profile-image\"><img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\"></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -16944,11 +17247,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/9\">",
+                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\">",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "img[src$=\"empNumber/9\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(4) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
                     ]
                 },
                 {
@@ -16984,11 +17287,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-emp\">Russel  Hamilton</p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-emp\">FirstNameTest ola LastNameTest</p>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(4) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-emp.oxd-text--p[data-v-f8f18dc0=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(4) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-emp.oxd-text--p"
                     ]
                 },
                 {
@@ -17004,11 +17307,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-time\">2020-07-10 11:33 PM</p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-time\">2024-17-10 08:51 PM</p>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(4) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-time.oxd-text--p[data-v-f8f18dc0=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(4) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-time.oxd-text--p"
                     ]
                 },
                 {
@@ -17044,11 +17347,191 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-body\">Live SIMPLY\r\nDream BIG\r\nBe GREATFULL\r\nGive LOVE\r\nLaugh LOT.......</p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-body\">new post</p>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(4) > .orangehrm-buzz-widget-body.oxd-text--p[data-v-f8f18dc0=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(4) > .orangehrm-buzz-widget-body.oxd-text--p"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div data-v-c93bdbf3=\"\" data-v-f8f18dc0=\"\" class=\"oxd-grid-item oxd-grid-item--gutters orangehrm-buzz-widget-card\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div data-v-f8f18dc0=\"\" class=\"orangehrm-buzz-widget-header\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div data-v-06f466c6=\"\" data-v-f8f18dc0=\"\" class=\"orangehrm-buzz-profile-image\"><img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\"></div>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<img data-v-06f466c6=\"\" alt=\"profile picture\" src=\"../pim/viewPhoto/empNumber/7\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-profile-image[data-v-06f466c6=\"\"][data-v-f8f18dc0=\"\"] > img[src$=\"empNumber/7\"][alt=\"profile picture\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div data-v-f8f18dc0=\"\" class=\"orangehrm-buzz-widget-header-text\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-emp\">FirstNameTest ola LastNameTest</p>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-emp.oxd-text--p"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-time\">2024-17-10 08:32 PM</p>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-time.oxd-text--p"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<hr data-v-9f847659=\"\" data-v-f8f18dc0=\"\" class=\"oxd-divider orangehrm-buzz-widget-divider\" role=\"separator\" aria-orientation=\"horizontal\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-divider.oxd-divider[data-v-9f847659=\"\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "isIframe": false
+                            },
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "All page content is contained by landmarks",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-body\">nn..n,n.n.n.n.n</p>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(5) > .orangehrm-buzz-widget-body.oxd-text--p"
                     ]
                 },
                 {
@@ -17484,7 +17967,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div class=\"oxd-pie-chart\"><canvas id=\"SLmC_cWG\" width=\"326\" height=\"265\" style=\"display: block; box-sizing: border-box; height: 265px; width: 326px;\"></canvas></div>",
+                    "html": "<div class=\"oxd-pie-chart\"><canvas id=\"oI7yujJR\" width=\"326\" height=\"265\" style=\"display: block; box-sizing: border-box; height: 265px; width: 326px;\"></canvas></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -17504,11 +17987,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<canvas id=\"SLmC_cWG\" width=\"326\" height=\"265\" style=\"display: block; box-sizing: border-box; height: 265px; width: 326px;\"></canvas>",
+                    "html": "<canvas id=\"oI7yujJR\" width=\"326\" height=\"265\" style=\"display: block; box-sizing: border-box; height: 265px; width: 326px;\"></canvas>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "#SLmC_cWG"
+                        "#oI7yujJR"
                     ]
                 },
                 {
@@ -18004,7 +18487,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div class=\"oxd-pie-chart\"><canvas id=\"exjpPs_1\" width=\"326\" height=\"265\" style=\"display: block; box-sizing: border-box; height: 265px; width: 326px;\"></canvas></div>",
+                    "html": "<div class=\"oxd-pie-chart\"><canvas id=\"nFWut1Hz\" width=\"326\" height=\"265\" style=\"display: block; box-sizing: border-box; height: 265px; width: 326px;\"></canvas></div>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -18024,11 +18507,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<canvas id=\"exjpPs_1\" width=\"326\" height=\"265\" style=\"display: block; box-sizing: border-box; height: 265px; width: 326px;\"></canvas>",
+                    "html": "<canvas id=\"nFWut1Hz\" width=\"326\" height=\"265\" style=\"display: block; box-sizing: border-box; height: 265px; width: 326px;\"></canvas>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "#exjpPs_1"
+                        "#nFWut1Hz"
                     ]
                 },
                 {
@@ -18064,7 +18547,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<li data-v-28866788=\"\"><span data-v-28866788=\"\" class=\"oxd-chart-legend-key\" style=\"background-color: rgb(254, 125, 21);\"></span><span data-v-7b563373=\"\" data-v-28866788=\"\" class=\"oxd-text oxd-text--span\" title=\"New York Sales Office\">New York Sales Office</span></li>",
+                    "html": "<li data-v-28866788=\"\"><span data-v-28866788=\"\" class=\"oxd-chart-legend-key\" style=\"background-color: rgb(254, 125, 21);\"></span><span data-v-7b563373=\"\" data-v-28866788=\"\" class=\"oxd-text oxd-text--span\" title=\"Texas R&amp;D\">Texas R&amp;D</span></li>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -18104,11 +18587,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<span data-v-7b563373=\"\" data-v-28866788=\"\" class=\"oxd-text oxd-text--span\" title=\"New York Sales Office\">New York Sales Office</span>",
+                    "html": "<span data-v-7b563373=\"\" data-v-28866788=\"\" class=\"oxd-text oxd-text--span\" title=\"Texas R&amp;D\">Texas R&amp;D</span>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "span[title=\"New York Sales Office\"]"
+                        "span[title=\"Texas R&D\"]"
                     ]
                 },
                 {
@@ -18124,7 +18607,7 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<li data-v-28866788=\"\"><span data-v-28866788=\"\" class=\"oxd-chart-legend-key\" style=\"background-color: rgb(255, 170, 0);\"></span><span data-v-7b563373=\"\" data-v-28866788=\"\" class=\"oxd-text oxd-text--span\" title=\"Texas R&amp;D\">Texas R&amp;D</span></li>",
+                    "html": "<li data-v-28866788=\"\"><span data-v-28866788=\"\" class=\"oxd-chart-legend-key\" style=\"background-color: rgb(255, 170, 0);\"></span><span data-v-7b563373=\"\" data-v-28866788=\"\" class=\"oxd-text oxd-text--span\" title=\"New York Sales Office\">New York Sales Office</span></li>",
                     "impact": null,
                     "none": [],
                     "target": [
@@ -18164,11 +18647,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<span data-v-7b563373=\"\" data-v-28866788=\"\" class=\"oxd-text oxd-text--span\" title=\"Texas R&amp;D\">Texas R&amp;D</span>",
+                    "html": "<span data-v-7b563373=\"\" data-v-28866788=\"\" class=\"oxd-text oxd-text--span\" title=\"New York Sales Office\">New York Sales Office</span>",
                     "impact": null,
                     "none": [],
                     "target": [
-                        "span[title=\"Texas R&D\"]"
+                        "span[title=\"New York Sales Office\"]"
                     ]
                 },
                 {
@@ -18345,14 +18828,14 @@
     "testEnvironment": {
         "orientationAngle": 0,
         "orientationType": "landscape-primary",
-        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/129.0.0.0 Safari/537.36",
         "windowHeight": 865,
         "windowWidth": 929
     },
     "testRunner": {
         "name": "axe"
     },
-    "timestamp": "2024-10-17T18:29:10.228Z",
+    "timestamp": "2024-10-18T01:23:43.994Z",
     "toolOptions": {
         "reporter": "v1"
     },
@@ -18717,7 +19200,7 @@
                         }
                     ],
                     "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.33 (foreground color: #64728c, background color: #f1f2f5, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
-                    "html": "<span data-v-7b563373=\"\" data-v-58bcc29e=\"\" class=\"oxd-text oxd-text--span orangehrm-attendance-card-fulltime\"><b data-v-58bcc29e=\"\">0h</b> <b data-v-58bcc29e=\"\">0m</b> Today</span>",
+                    "html": "<span data-v-7b563373=\"\" data-v-58bcc29e=\"\" class=\"oxd-text oxd-text--span orangehrm-attendance-card-fulltime\"><b data-v-58bcc29e=\"\">4h</b> <b data-v-58bcc29e=\"\">0m</b> Today</span>",
                     "impact": "serious",
                     "none": [],
                     "target": [
@@ -18752,7 +19235,7 @@
                         }
                     ],
                     "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.33 (foreground color: #64728c, background color: #f1f2f5, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1",
-                    "html": "<b data-v-58bcc29e=\"\">0h</b>",
+                    "html": "<b data-v-58bcc29e=\"\">4h</b>",
                     "impact": "serious",
                     "none": [],
                     "target": [
@@ -18813,7 +19296,7 @@
                             "message": "Element has insufficient color contrast of 4.33 (foreground color: #64728c, background color: #f1f2f5, font size: 7.5pt (10px), font weight: bold). Expected contrast ratio of 4.5:1",
                             "relatedNodes": [
                                 {
-                                    "html": "<div data-v-58bcc29e=\"\" class=\"orangehrm-attendance-card-summary-total\"><i data-v-bddebfba=\"\" data-v-58bcc29e=\"\" class=\"oxd-icon bi-stopwatch orangehrm-attendance-card-icon\"></i><p data-v-7b563373=\"\" data-v-58bcc29e=\"\" class=\"oxd-text oxd-text--p orangehrm-attendance-card-fulltime\">0h 0m </p></div>",
+                                    "html": "<div data-v-58bcc29e=\"\" class=\"orangehrm-attendance-card-summary-total\"><i data-v-bddebfba=\"\" data-v-58bcc29e=\"\" class=\"oxd-icon bi-stopwatch orangehrm-attendance-card-icon\"></i><p data-v-7b563373=\"\" data-v-58bcc29e=\"\" class=\"oxd-text oxd-text--p orangehrm-attendance-card-fulltime\">8h 48m </p></div>",
                                     "target": [
                                         ".orangehrm-attendance-card-summary-total"
                                     ]
@@ -18822,7 +19305,7 @@
                         }
                     ],
                     "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.33 (foreground color: #64728c, background color: #f1f2f5, font size: 7.5pt (10px), font weight: bold). Expected contrast ratio of 4.5:1",
-                    "html": "<p data-v-7b563373=\"\" data-v-58bcc29e=\"\" class=\"oxd-text oxd-text--p orangehrm-attendance-card-fulltime\">0h 0m </p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-58bcc29e=\"\" class=\"oxd-text oxd-text--p orangehrm-attendance-card-fulltime\">8h 48m </p>",
                     "impact": "serious",
                     "none": [],
                     "target": [
@@ -18857,11 +19340,11 @@
                         }
                     ],
                     "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.8 (foreground color: #929baa, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1",
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-time\">2020-07-10 11:38 PM</p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-time\">2024-17-10 08:59 PM</p>",
                     "impact": "serious",
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(1) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-time.oxd-text--p[data-v-f8f18dc0=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(1) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-time.oxd-text--p"
                     ]
                 },
                 {
@@ -18892,11 +19375,46 @@
                         }
                     ],
                     "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.8 (foreground color: #929baa, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1",
-                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-time\">2020-07-10 11:38 PM</p>",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-time\">2024-17-10 08:57 PM</p>",
                     "impact": "serious",
                     "none": [],
                     "target": [
-                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(2) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-time.oxd-text--p[data-v-f8f18dc0=\"\"]"
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(2) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-time.oxd-text--p"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 2.8,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#929baa",
+                                "fontSize": "7.5pt (10px)",
+                                "fontWeight": "normal",
+                                "messageKey": null,
+                                "shadowColor": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has insufficient color contrast of 2.8 (foreground color: #929baa, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1",
+                            "relatedNodes": [
+                                {
+                                    "html": "<div data-v-8a31f039=\"\" data-v-133d244a=\"\" data-v-f8f18dc0=\"\" data-v-04c617d8=\"\" class=\"oxd-sheet oxd-sheet--rounded oxd-sheet--white orangehrm-dashboard-widget\">",
+                                    "target": [
+                                        ".orangehrm-dashboard-widget.oxd-grid-item[data-v-04c617d8=\"\"]:nth-child(4) > .oxd-sheet.oxd-sheet--rounded.oxd-sheet--white"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.8 (foreground color: #929baa, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1",
+                    "html": "<p data-v-7b563373=\"\" data-v-f8f18dc0=\"\" class=\"oxd-text oxd-text--p orangehrm-buzz-widget-header-time\">2024-17-10 08:52 PM</p>",
+                    "impact": "serious",
+                    "none": [],
+                    "target": [
+                        ".orangehrm-buzz-widget-card.oxd-grid-item.oxd-grid-item--gutters:nth-child(3) > .orangehrm-buzz-widget-header[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-text[data-v-f8f18dc0=\"\"] > .orangehrm-buzz-widget-header-time.oxd-text--p"
                     ]
                 },
                 {
@@ -19018,77 +19536,6 @@
                 "TT11.a",
                 "EN-301-549",
                 "EN-9.3.1.1",
-                "ACT"
-            ]
-        },
-        {
-            "description": "Ensure <img> elements have alternate text or a role of none or presentation",
-            "help": "Images must have alternate text",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=axeAPI",
-            "id": "image-alt",
-            "impact": "critical",
-            "nodes": [
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": null,
-                            "id": "has-alt",
-                            "impact": "critical",
-                            "message": "Element does not have an alt attribute",
-                            "relatedNodes": []
-                        },
-                        {
-                            "data": null,
-                            "id": "aria-label",
-                            "impact": "critical",
-                            "message": "aria-label attribute does not exist or is empty",
-                            "relatedNodes": []
-                        },
-                        {
-                            "data": null,
-                            "id": "aria-labelledby",
-                            "impact": "critical",
-                            "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
-                            "relatedNodes": []
-                        },
-                        {
-                            "data": {
-                                "messageKey": "noAttr"
-                            },
-                            "id": "non-empty-title",
-                            "impact": "critical",
-                            "message": "Element has no title attribute",
-                            "relatedNodes": []
-                        },
-                        {
-                            "data": null,
-                            "id": "presentational-role",
-                            "impact": "critical",
-                            "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-                    "html": "<img data-v-f8f18dc0=\"\" src=\"/web/index.php/buzz/photo/9\" class=\"orangehrm-buzz-widget-picture\">",
-                    "impact": "critical",
-                    "none": [],
-                    "target": [
-                        ".orangehrm-buzz-widget-picture"
-                    ]
-                }
-            ],
-            "tags": [
-                "cat.text-alternatives",
-                "wcag2a",
-                "wcag111",
-                "section508",
-                "section508.22.a",
-                "TTv5",
-                "TT7.a",
-                "TT7.b",
-                "EN-301-549",
-                "EN-9.1.1.1",
                 "ACT"
             ]
         },
@@ -19296,7 +19743,7 @@
                         }
                     ],
                     "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
-                    "html": "<span data-v-7b563373=\"\" data-v-58bcc29e=\"\" class=\"oxd-text oxd-text--span orangehrm-attendance-card-fulltime\"><b data-v-58bcc29e=\"\">0h</b> <b data-v-58bcc29e=\"\">0m</b> Today</span>",
+                    "html": "<span data-v-7b563373=\"\" data-v-58bcc29e=\"\" class=\"oxd-text oxd-text--span orangehrm-attendance-card-fulltime\"><b data-v-58bcc29e=\"\">4h</b> <b data-v-58bcc29e=\"\">0m</b> Today</span>",
                     "impact": "moderate",
                     "none": [],
                     "target": [

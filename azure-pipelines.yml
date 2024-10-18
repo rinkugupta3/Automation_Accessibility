@@ -13,7 +13,6 @@ variables:
   HEADLESS: 'true'
 
 stages:
-  # Stage for running headless tests in the 'tests_axecore_lighthouse' folder
   - stage: AxecoreLighthouseTests
     displayName: 'Run Headless Axecore Lighthouse Tests'
     jobs:
@@ -56,14 +55,27 @@ stages:
               pytest tests_axecore_lighthouse/ --html=report_axecore_lighthouse.html --maxfail=3 --disable-warnings -v
             displayName: 'Run Headless Axecore Lighthouse Tests'
 
+          # Publish Axecore Lighthouse Test Report
           - task: PublishBuildArtifacts@1
             inputs:
-              PathtoPublish: 'tests_axecore_lighthouse/report_axecore_lighthouse.html'
+              PathtoPublish: 'tests/report_axecore_lighthouse.html'
               ArtifactName: 'AxecoreLighthouseTestReport'
+
+          # Publish pytest.log as build artifact
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: 'tests/pytest.log'  # Ensure this path matches the logs folder
+            ArtifactName: 'PytestLog'
+
+          # Optional: Publish all logs if your tests generate logs in different folders
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: 'tests_login_home_webpage/pytest.log'
+            ArtifactName: 'LoginHomeWebpagePytestLog'
 
           - task: PublishPipelineArtifact@1
             inputs:
-              targetPath: 'screenshots'
+              targetPath: 'tests'
 
   # Stage for running headless tests in the 'tests_login_home_webpage' folder
   - stage: LoginHomeWebpageTests

@@ -4,7 +4,14 @@
 # Lighthouse for performance checks
 # Axe-core provides detailed reports about accessibility violations, including the specific elements affected and suggestions for remediation.
 # Lighthouse gives a high-level overview of accessibility issues alongside other performance and SEO metrics
-# pytest -vv tests_axecore_lighthouse/test_axecore_lighthouse.py
+# pytest -vv tests/test_axecore_lighthouse.py
+# npm install -g lighthouse
+# lighthouse_command = [r"C:\Users\<YourUsername>\AppData\Roaming\npm\lighthouse.cmd", "https://your-url.com"]
+# Axe-core for accessibility checks
+# Lighthouse for performance checks
+# Axe-core provides detailed reports about accessibility violations, including the specific elements affected and suggestions for remediation.
+# Lighthouse gives a high-level overview of accessibility issues alongside other performance and SEO metrics
+# pytest -vv tests/test_axecore_lighthouse.py
 import logging
 import os
 import subprocess
@@ -93,11 +100,11 @@ try:
 
     # Output the results to a JSON file
     logger.info("Generating accessibility JSON report")
-    axe.write_results(results, 'tests_axecore_lighthouse/accessibility_report.json')
+    axe.write_results(results, 'tests/accessibility_report.json')
 
     # Generate and output the HTML report by calling the imported function
     logger.info("Generating accessibility HTML report")
-    html_report_path = 'tests_axecore_lighthouse/accessibility_report.html'
+    html_report_path = 'tests/accessibility_report.html'
     generate_html_report(results, html_report_path)
 
     # Path to Lighthouse executable
@@ -107,8 +114,8 @@ try:
     logger.info("Running Lighthouse audit...")
 
     # Define the output path for the Lighthouse report
-    # output_path = 'tests_axecore_lighthouse/lighthouse_report.json'
-    output_path = 'tests_axecore_lighthouse/lighthouse_report.html'
+    # output_path = 'tests/lighthouse_report.json'
+    output_path = 'tests/lighthouse_report.html'
     generate_html_report(results, html_report_path)
 
     lighthouse_command = [

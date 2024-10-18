@@ -13,7 +13,7 @@ def pytest_configure(config):
 
     # Define log directory and ensure it exists
     log_dir_map = {
-        'test_axecore_lighthouse.py': 'tests_axecore_lighthouse',
+        'test_axecore_lighthouse.py': 'tests',
         'test_login_home_webpage.py': 'tests_login_home_webpage',
         'test_login_webpage.py': 'tests_login_webpage',
     }
