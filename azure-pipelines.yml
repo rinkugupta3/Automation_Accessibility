@@ -52,7 +52,7 @@ stages:
           - script: |
               export HEADLESS=true
               lighthouse --version  # Check Lighthouse installation
-              pytest tests/test_axecore_lighthouse.py --html=report_axecore_lighthouse.html --maxfail=3 --disable-warnings -v
+              pytest -vv tests/test_axecore_lighthouse.py --html=tests/report_axecore_lighthouse.html --maxfail=3 --disable-warnings -v
             displayName: 'Run Headless Axecore Lighthouse Tests'
 
           # Publish Axecore Lighthouse Test Report
@@ -118,7 +118,7 @@ stages:
 
           - script: |
               export HEADLESS=true
-              pytest tests_login_home_webpage/test_login_home_webpage.py --html=report_login_home_webpage.html --maxfail=3 --disable-warnings -v
+              pytest -vv tests_login_home_webpage/test_login_home_webpage.py --html=tests_login_home_webpage/report_login_home_webpage.html --maxfail=3 --disable-warnings -v
             displayName: 'Run Headless Login Home Webpage Tests'
 
           # Publish Accessibility HTML Report
@@ -178,7 +178,7 @@ stages:
 
           - script: |
               export HEADLESS=true
-              pytest tests_login_webpage/test_login_webpage.py --html=report_login_webpage.html --maxfail=3 --disable-warnings -v
+              pytest -vv tests_login_webpage/test_login_webpage.py --html=tests_login_webpage/report_login_webpage.html --maxfail=3 --disable-warnings -v
             displayName: 'Run Headless Login Webpage Tests'
 
           # Publish Accessibility HTML Report
