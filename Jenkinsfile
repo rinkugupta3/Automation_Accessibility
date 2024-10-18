@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Checkout from dev-env branch
+                // Checkout from main branch
                 git branch: 'main', url: 'https://github.com/rinkugupta3/Automation_Accessibility'
             }
         }
@@ -12,6 +12,12 @@ pipeline {
                 bat "C:/Users/dhira/AppData/Local/Programs/Python/Python311/python.exe -m pip install --upgrade pip"
                 bat "C:/Users/dhira/AppData/Local/Programs/Python/Python311/python.exe -m pip install -r requirements.txt"
                 bat "C:/Users/dhira/AppData/Local/Programs/Python/Python311/python.exe -m pip install pytest-html"
+                bat "C:/Users/dhira/AppData/Local/Programs/Python/Python311/python.exe -m pip install axe-selenium-python" // Install axe-selenium-python
+            }
+        }
+        stage('Install Lighthouse') {
+            steps {
+                bat "npm install -g lighthouse" // Install Lighthouse globally
             }
         }
         stage('Install Playwright Browsers') {
@@ -66,5 +72,4 @@ pipeline {
         failure {
             echo 'Pipeline failed!'
         }
-    }
 }
