@@ -59,7 +59,13 @@ stages:
           - task: PublishBuildArtifacts@1
             inputs:
               PathtoPublish: 'tests/report_axecore_lighthouse.html'
-              ArtifactName: 'AxecoreLighthouseTestReport'
+              ArtifactName: 'Axecore Lighthouse HTML Report'
+
+          # Publish Accessibility HTML Report
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: 'tests/accessibility_report.html'
+              ArtifactName: 'Accessibility HTML report'
 
           # Publish pytest.log as build artifact
           - task: PublishBuildArtifacts@1
@@ -67,11 +73,11 @@ stages:
               PathtoPublish: 'tests/pytest.log'  # Ensure this path matches the logs folder
             ArtifactName: 'PytestLog'
 
-          # Optional: Publish all logs if your tests generate logs in different folders
+          # Publish accessibility JSON report
           - task: PublishBuildArtifacts@1
             inputs:
-              PathtoPublish: 'tests_login_home_webpage/pytest.log'
-            ArtifactName: 'LoginHomeWebpagePytestLog'
+              PathtoPublish: 'tests/accessibility_report.json'
+            ArtifactName: 'Accessibility JSON report'
 
           - task: PublishPipelineArtifact@1
             inputs:
@@ -107,18 +113,35 @@ stages:
             displayName: 'Install Python Dependencies'
 
           - script: |
+              pip install axe-selenium-python
+            displayName: 'Install axe-selenium-python'
+
+          - script: |
               export HEADLESS=true
               pytest tests_login_home_webpage/ --html=report_login_home_webpage.html --maxfail=3 --disable-warnings -v
             displayName: 'Run Headless Login Home Webpage Tests'
 
+          # Publish Accessibility HTML Report
           - task: PublishBuildArtifacts@1
             inputs:
-              PathtoPublish: 'report_login_home_webpage.html'
-              ArtifactName: 'LoginHomeWebpageTestReport'
+              PathtoPublish: 'tests_login_home_webpage/accessibility_report.html'
+              ArtifactName: 'Accessibility HTML report'
+
+          # Publish pytest.log as build artifact
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: 'tests_login_home_webpage/pytest.log'  # Ensure this path matches the logs folder
+            ArtifactName: 'PytestLog'
+
+          # Publish accessibility JSON report
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: 'tests_login_home_webpage/accessibility_report.json'
+            ArtifactName: 'Accessibility JSON report'
 
           - task: PublishPipelineArtifact@1
             inputs:
-              targetPath: 'screenshots'
+              targetPath: 'tests_login_home_webpage'
 
   # Stage for running headless tests in the 'tests_login_webpage' folder
   - stage: LoginWebpageTests
@@ -150,15 +173,32 @@ stages:
             displayName: 'Install Python Dependencies'
 
           - script: |
+              pip install axe-selenium-python
+            displayName: 'Install axe-selenium-python'
+
+          - script: |
               export HEADLESS=true
               pytest tests_login_webpage/ --html=report_login_webpage.html --maxfail=3 --disable-warnings -v
             displayName: 'Run Headless Login Webpage Tests'
 
+          # Publish Accessibility HTML Report
           - task: PublishBuildArtifacts@1
             inputs:
-              PathtoPublish: 'report_login_webpage.html'
-              ArtifactName: 'LoginWebpageTestReport'
+              PathtoPublish: 'tests_login_home_webpage/accessibility_report.html'
+              ArtifactName: 'Accessibility HTML report'
+
+          # Publish pytest.log as build artifact
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: 'tests_login_home_webpage/pytest.log'  # Ensure this path matches the logs folder
+            ArtifactName: 'PytestLog'
+
+          # Publish accessibility JSON report
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: 'tests_login_home_webpage/accessibility_report.json'
+            ArtifactName: 'Accessibility JSON report'
 
           - task: PublishPipelineArtifact@1
             inputs:
-              targetPath: 'screenshots'
+              targetPath: 'tests_login_webpage'
