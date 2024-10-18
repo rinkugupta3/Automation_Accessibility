@@ -58,7 +58,7 @@ stages:
           # Publish Axecore Lighthouse Test Report
           - task: PublishBuildArtifacts@1
             inputs:
-              PathtoPublish: 'tests/report_axecore_lighthouse.html'
+              PathtoPublish: '$(Build.SourcesDirectory)/tests/report_axecore_lighthouse.html'
               ArtifactName: 'Axecore Lighthouse HTML Report'
 
           # Publish Accessibility HTML Report
@@ -124,19 +124,19 @@ stages:
           # Publish Accessibility HTML Report
           - task: PublishBuildArtifacts@1
             inputs:
-              PathtoPublish: 'tests_login_home_webpage/accessibility_report.html'
+              PathtoPublish: '$(Build.SourcesDirectory)/tests_login_home_webpage/accessibility_report.html'
               ArtifactName: 'Accessibility HTML Report'
 
           # Publish pytest.log as build artifact
           - task: PublishBuildArtifacts@1
             inputs:
-              PathtoPublish: 'tests_login_home_webpage/pytest.log'
+              PathtoPublish: '$(Build.SourcesDirectory)/tests_login_home_webpage/pytest.log'
               ArtifactName: 'PytestLog'
 
           # Publish accessibility JSON report
           - task: PublishBuildArtifacts@1
             inputs:
-              PathtoPublish: 'tests_login_home_webpage/accessibility_report.json'
+              PathtoPublish: '$(Build.SourcesDirectory)/tests_login_home_webpage/accessibility_report.json'
               ArtifactName: 'Accessibility JSON Report'
 
           - task: PublishPipelineArtifact@1
@@ -184,19 +184,19 @@ stages:
           # Publish Accessibility HTML Report
           - task: PublishBuildArtifacts@1
             inputs:
-              PathtoPublish: 'tests_login_webpage/accessibility_report.html'
+              PathtoPublish: '$(Build.SourcesDirectory)/tests_login_webpage/accessibility_report.html'
               ArtifactName: 'Accessibility HTML Report'
 
           # Publish pytest.log as build artifact
           - task: PublishBuildArtifacts@1
             inputs:
-              PathtoPublish: 'tests_login_webpage/pytest.log'
+              PathtoPublish: '$(Build.SourcesDirectory)/tests_login_webpage/pytest.log'
               ArtifactName: 'PytestLog'
 
           # Publish accessibility JSON report
           - task: PublishBuildArtifacts@1
             inputs:
-              PathtoPublish: 'tests_login_webpage/accessibility_report.json'
+              PathtoPublish: '$(Build.SourcesDirectory)/tests_login_webpage/accessibility_report.json'
               ArtifactName: 'Accessibility JSON Report'
 
           - task: PublishPipelineArtifact@1
